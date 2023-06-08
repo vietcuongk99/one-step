@@ -1,0 +1,40 @@
+{
+  "title": "Softzone",
+  "your-idea": "ý tưởng",
+  "our-solution": "Công nghệ",
+  "about-us": "Về chúng tôi",
+  "launch-your-product": "Triển khai dự án",
+  "heroSection": {
+    "line1": "Cùng nhau tìm kiếm giải pháp.",
+    "line2": "Chúng tôi là một nhóm chuyên về phát triển ứng dụng web.",
+    "line3": "Bạn có ý tưởng - chúng tôi có giải pháp."
+  },
+  "steps": {
+    "step1": {
+      "title": "Kick-off dự án",
+      "detail": "Chúng tôi sẵn sàng giúp bạn, cho dù bạn quan tâm đến cách hình thành ý tưởng cho sản phẩm mới nhất của mình hay cách đánh giá chất lượng của những sản phẩm đã có từ trước."
+    },
+    "step2": {
+      "title": "Khái niệm hóa và đánh giá",
+      "detail": "Làm cho sản phẩm của bạn trở thành một khái niệm hữu hình. Phác thảo và đánh giá các đặc điểm nổi bật quan trọng của sản phẩm để đáp ứng các mục tiêu kinh doanh chuyên biệt với sai sót tối thiểu."
+    },
+    "step3": {
+      "title": "Quy trình thiết kế",
+      "detail": "Đặt nền móng thiết yếu và đưa người dùng đến gần hơn với các sản phẩm kỹ thuật số của bạn. Cung cấp các giải pháp khả thi và nâng cao giao diện chỉ số kinh doanh của bạn."
+    },
+    "step4": {
+      "title": "Quy trình phát triển",
+      "detail": "Tạo các ứng dụng dễ chịu, tốc độ cao và an toàn phục vụ cho các mục tiêu kinh doanh của bạn với độ chính xác cao nhất."
+    }
+  },
+  "start-title": "Sẵn sàng thực hiện",
+  "start-title-2": "ý tưởng của bạn",
+  "start-subtitle": "Bắt đầu với Softzone chỉ bằng cái nháy mắt",
+  "location": "quận Nam Từ Liêm, Hà Nội, Việt Nam",
+  "company": "Công ty",
+  "help": "Hỗ trợ",
+  "contact-us": "Liên hệ chúng tôi",
+  "legal": "Pháp lý",
+  "terms": "Điều khoản",
+  "privacy": "Bảo mật"
+}

@@ -1,0 +1,50 @@
+{
+  "title": "Softzone",
+  "web-dev": "Phát triển trang web",
+  "web-dev-content": "Phát triển web full-stack để xây dựng các giải pháp web đổi mới và sẵn sàng ra mắt cho doanh nghiệp của bạn.",
+  "mobile-dev": "Tạo ứng dụng di động",
+  "mobile-dev-content": "Xây dựng các ứng dụng di động tùy chỉnh được thiết kế tốt và tối ưu hóa với UX thú vị cho cả iOS và Android.",
+  "ux-ui-design": "Thiết kế UX/UI",
+  "design-content": "Hãy cho chúng tôi một ý tưởng và các nhà thiết kế của chúng tôi sẽ biến nó thành hiện thực. Chúng tôi cung cấp cho bạn thiết kế hiện đại nhất theo nhu cầu kinh doanh của bạn, đồng thời để tăng tỷ lệ chuyển đổi và thời gian dừng.",
+  "staff-aug": "Tăng trưởng nhân sự",
+  "staff-aug-content": "Mở rộng quy mô đội ngũ của bạn với đội ngũ lập trình viên tài năng hàng đầu. Giải bài toán tài nguyên trong dự án của bạn thật dễ dàng với Softzone.",
+  "business": "Kinh doanh",
+  "business-content": "Chúng tôi cung cấp các dịch vụ về: thương mại điện tử, thanh toán, ví điện tử, cộng tác viên, chat, Idap,... và nhiều dịch vụ khác.",
+  "services-title": "Dịch vụ chúng tôi cung cấp",
+  "services-subtitle": "Chúng tôi xây dựng trang web và ứng dụng di động với những công nghệ mới nhất",
+  "steps-title": "Lộ trình cho sản phẩm next-gen",
+  "steps-subtitle": "Cùng với Sotfzone, chúng tôi đảm bảo lợi ích bền vững và lâu dài của bạn nhờ khả năng đổi mới và thực thi nhanh chóng của chúng tôi.",
+  "milestone-title": "những cột mốc",
+  "milestone-subtitle": "Sau nhiều năm làm việc chăm chỉ và cống hiến, chúng tôi tự hào về những cột mốc to lớn được xây dựng bởi những người tài năng của chúng tôi",
+  "employees": "Nhân viên",
+  "employees-detail": "Bao gồm các kỹ sư hàng đầu, bán hàng, nhà phân tích kinh doanh, v.v.",
+  "offices": "Văn phòng",
+  "offices-detail": "2 văn phòng chính tại Việt Nam",
+  "clients": "Khách hàng",
+  "clients-detail": "Hơn 50 khách hàng từ các quốc gia khác nhau trên toàn thế giới",
+  "reviews-title": "Đánh giá về chúng tôi",
+  "reviews-subtitle": "Sứ mệnh của chúng tôi là xây dựng hạnh phúc cho khách hàng",
+  "reviews-subtitle-2": "Sản phẩm của chúng tôi là sự hài lòng của khách hàng",
+  "reviews-list": {
+    "reviews-1": {
+      "subtitle": "Lập trình viên Frontend tại KTHG",
+      "content": "Softzone thật tuyệt. Họ giúp tôi xây dựng dự án và cho tôi những giải pháp đối với kiến trúc Front-end của một ứng dụng web. Thật sự rất tuyệt vời."
+    },
+    "reviews-2": {
+      "subtitle": "Đối tác - Chủ sở hữu ứng dụng Cooky",
+      "content": "Softzone hoàn thành mọi yêu cầu mà ứng dụng của tôi cần. Các bạn thật tuyệt vời và tôi rất hào hứng với ứng dụng mà các bạn tạo ra."
+    },
+    "reviews-3": {
+      "subtitle": "Đồng sáng lập ứng dụng Mimi",
+      "content": "The company has all the things I'm looking for, the direction, people, environment are all good."
+    },
+    "reviews-4": {
+      "subtitle": "Lập trình viên tại Softzone",
+      "content": "Softzone có mọi thứ mà tôi tìm kiếm từ định hướng, con người cho đến môi trường. Tất cả đều rất tốt."
+    },
+    "reviews-5": {
+      "subtitle": "Fullstack Developer at Softzone",
+      "content": "Softzone là một nơi tuyệt vời cho sự nghiệp của bạn. Phần lớn nhân sự ở đây là người trẻ."
+    }
+  }
+}

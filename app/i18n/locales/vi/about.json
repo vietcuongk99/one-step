@@ -1,0 +1,30 @@
+{
+  "title": "Về chúng tôi \uD83D\uDE0E | Softzone",
+  "about-us": "Về chúng tôi",
+  "our-story": "Câu chuyện",
+  "story-1": "Hành trình của chúng tôi bắt đầu với tư cách là một nhóm các nhà phát triển trẻ ở Việt Nam, những người yêu thích viết mã và vượt qua những thử thách khó khăn. Nhiều năm đã trôi qua, công ty mà chúng tôi thành lập bây giờ vẫn thú vị, vui vẻ và năng động như hồi đó.",
+  "story-2": "Kể từ khi bước vào thế giới kinh doanh chuyển động nhanh, chúng tôi đã không ngừng học hỏi và sử dụng các kỹ năng của mình trong thiết kế web và phát triển ứng dụng để làm cho bối cảnh kỹ thuật số trở nên dễ tiếp cận và dễ quản lý hơn đối với các doanh nghiệp vừa và nhỏ, các công ty mới thành lập và các công ty để họ có thể phát triển và thành công.",
+  "story-3": "Nếu bạn cũng có niềm tin như chúng tôi rằng mỗi dòng mã được viết hôm nay có thể trở thành những bước nhảy vọt khổng lồ cho xã hội trong tương lai, hãy liên hệ với chúng tôi và bắt đầu một dự án.",
+  "our-values": "Giá trị của chúng tôi",
+  "our-values-subtitle": "Chúng tôi bắt đầu tìm kiếm, thực hiện và biến đổi, bất cứ điều gì cho phép chúng tôi cùng nhau đạt được những điều lớn lao và ý nghĩa hơn trong cuộc sống. Chúng tôi không chấp nhận mọi thứ theo cách của chúng. Chúng tôi là những kỹ sư muốn viết mã tuyệt vời.",
+  "values": {
+    "people": {
+      "title": "Con người",
+      "content": "Hãy quan tâm đến nhân viên của chúng tôi. Họ là những con người thực sự mà chúng tôi đã đưa vào thế giới Ars Futura nhỏ bé của mình. Họ có cảm xúc, vấn đề, cha mẹ, con cái, sở thích. Nếu họ cần một bàn tay, nhiệm vụ của chúng tôi là giúp đỡ họ. Cho một cái chết tiệt về công việc. Chúng tôi đang xây dựng một cái gì đó bằng chính đôi tay của mình. Đây là di sản của chúng tôi. Đưa công việc vào để chúng ta có thể tự hào về nó."
+    },
+    "feeling": {
+      "title": "Cảm xúc",
+      "content": "Chúng tôi yêu thích khi nhóm của chúng tôi đam mê công việc. Không ai hạnh phúc hơn khi thấy họ cần mẫn làm việc. Nhưng! Chúng tôi không muốn họ làm việc đến kiệt sức. Hãy hướng tới những điều to lớn hơn và tốt đẹp hơn, để tìm (và giữ) sự cân bằng trong cuộc sống của bạn. Hãy dành thời gian nghỉ ngơi, yêu cầu gia hạn thời hạn của bạn, tận hưởng kỳ nghỉ dài của bạn vào thứ Năm này. Công việc của bạn sẽ ở đó vào ngày mai."
+    },
+    "detail": {
+      "title": "Chi tiết",
+      "content": "Công việc hình ảnh lớn rất quan trọng, đó là những gì chúng tôi xây dựng doanh nghiệp này trên đó. Tuy nhiên, chúng tôi thích những chi tiết nhỏ, những chi tiết cho thấy chúng tôi đã quan tâm rất nhiều đến một thứ gì đó. Đó là những điều nhỏ nhặt mà ít người để ý – mã chúng tôi viết lại mặc dù chúng tôi không cần, những thiết kế chúng tôi đã loại bỏ trong quá trình thực hiện, loại gỗ chất lượng mà bạn sử dụng cho mặt sau của chiếc tủ mà không ai nhìn thấy."
+    },
+    "happy": {
+      "title": "Niềm vui",
+      "content": "Internet là một nơi rộng lớn, tuyệt vời với đầy đủ mọi thứ. Và một số trong những điều đó chỉ đơn giản là khơi dậy niềm vui. Chúng tôi muốn trở thành những người chịu trách nhiệm mang lại một chút niềm vui đó cho thế giới. Nếu hóa ra chúng ta cũng có niềm vui trong suốt chặng đường, thì hãy cứ như vậy! Trong 20 năm nữa, khi mọi người nghĩ lại khoảng thời gian họ đã dành cho Ars Futura, chúng tôi muốn họ cảm thấy như họ đã có những khoảng thời gian vui vẻ."
+    }
+  },
+  "start": "Bắt đầu hành trình với Softzone",
+  "launch-your-product": "Triển khai dự án"
+}

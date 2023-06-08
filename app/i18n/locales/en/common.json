@@ -1,0 +1,40 @@
+{
+  "title": "Softzone",
+  "your-idea": "Your idea",
+  "our-solution": "Our solution",
+  "about-us": "About us",
+  "launch-your-product": "Launch your product",
+  "heroSection": {
+    "line1": "Let's solve it together.",
+    "line2": "We are a full-service web app development team.",
+    "line3": "You have an idea - we have your solution."
+  },
+  "steps": {
+    "step1": {
+      "title": "Project Kickoff",
+      "detail": "We are ready to help you, whether you care about how a concept for your latest product should be formed or how the quality pre-existing ones should be assessed."
+    },
+    "step2": {
+      "title": "Conceptualization and Assessment",
+      "detail": "Make your product a tangible concept. Outline and assess crucial hallmarks of your product to meet specialized business objectives with minimal errors."
+    },
+    "step3": {
+      "title": "Design Process",
+      "detail": "Lay essential foundations and bring users closer to your digital products Provide feasible solutions and enhance your business metrics interface."
+    },
+    "step4": {
+      "title": "Development Process",
+      "detail": "Create pleasing, up-to-speed, and safe applications catered to your business objective with utmost precision."
+    }
+  },
+  "start-title": "ready to start",
+  "start-title-2": "your idea",
+  "start-subtitle": "Get started with Softzone in the wink of an eye",
+  "location": "Nam Tu Liem District, Hanoi, Vietnam",
+  "company": "Company",
+  "help": "help",
+  "contact-us": "Contact us",
+  "legal": "legal",
+  "terms": "Terms",
+  "privacy": "Privacy"
+}

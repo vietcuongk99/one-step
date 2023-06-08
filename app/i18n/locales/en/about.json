@@ -1,0 +1,30 @@
+{
+  "title": "About \uD83D\uDE0E | Softzone",
+  "about-us": "About us",
+  "our-story": "Our story",
+  "story-1": "Our journey started as a bunch of young developers in Vietnam who love coding and cracking difficult challenges. Years have passed, the company we found now is still as exciting, fun and dynamic as it was back then.",
+  "story-2": "Ever since we entered the fast moving business world, we kept on learning and using our skills in web design and app development to make the digital landscape more accessible and manageable for SMBs, startups, and companies so they can grow and be successful.",
+  "story-3": "If you also have a belief like we do that every single line of code written today can become giant leaps for society in the future, reach out to us and start a project.",
+  "our-values": "Our values",
+  "our-values-subtitle": "We start the search, the execution and the transformation, anything that allows us together accomplish greater and meaningful things in life. We do not accept things just the way they are. We are engineers who want to write great code.",
+  "values": {
+    "people": {
+      "title": "People",
+      "content": "Give a damn about our employees. They are real people who we have let into our little Ars Futura world. They have emotions, problems, parents, kids, hobbies. If they need a hand, it is our duty to help them out. Give a damn about the work. We’re building something with our own two hands. This is our legacy. Put the work in so that we can be proud of it."
+    },
+    "feeling": {
+      "title": "Feeling",
+      "content": "We love it when our teams are passionate about work. No one is happier to see them work diligently. But! We don’t want them to work themselves to exhaustion. Aim for bigger and better things, to find (and keep) the balance in your life. Take some time off, ask for an extension on your deadline, enjoy your long break this Thursday. Your work will be there tomorrow."
+    },
+    "detail": {
+      "title": "Detail",
+      "content": "Big picture work is important, it’s what we built this business on. But, we like the tiny details, ones that show we put a lot of care into something. It’s the little things that few people will notice – the code we rewrote even though we didn’t need to, the designs we scrapped along the way, the quality wood you use for the back of the cabinet that nobody sees."
+    },
+    "happy": {
+      "title": "Happy",
+      "content": "The Internet is a huge, wonderful place filled with all sorts of things. And some of those things simply spark joy. We want to be the ones responsible for putting a bit of that joy into the world. If it also turns out we had fun along the way, so be it! In 20 years’ time, when people think back on their time spent with Ars Futura, we’d like them to feel like they had some good times."
+    }
+  },
+  "start": "START THE JOURNEY WITH SOFTZONE",
+  "launch-your-product": "Launch your product"
+}

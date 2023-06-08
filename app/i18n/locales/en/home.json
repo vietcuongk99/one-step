@@ -1,0 +1,50 @@
+{
+  "title": "Softzone",
+  "web-dev": "Web development",
+  "web-dev-content": "Full-stack customized web development to build innovate and ready-to-launch web solutions for your business.",
+  "mobile-dev": "Mobile development",
+  "mobile-dev-content": "Build well-designed and optimized custom mobile applications with a delightful UX for both iOS and Android.",
+  "ux-ui-design": "UI/UX Design",
+  "design-content": "Give us an idea, and our designers bring it to life. We offer you state-of-the-art design according to your business needs, and also to increase the conversion rate and dwell time.",
+  "staff-aug": "Staff Augmentation",
+  "staff-aug-content": "Scale up your team with the best talent pool of developers in Vietnam. Solving the problem of resource in your project is too easy with Softzone.",
+  "business": "Business",
+  "business-content": "We provide services on: e-commerce, payment, ewallet, collborator, chat, Idap, ... and more.",
+  "services-title": "services we are providing",
+  "services-subtitle": "We build websites and mobile applications with the latest technology",
+  "steps-title": "steps to archieve next-gen product",
+  "steps-subtitle": "Joining with Softzone, we ensure your sustainable and long-term benefits because of our ability of rapid innovation and execution.",
+  "milestone-title": "our milestones",
+  "milestone-subtitle": "After years of hard work and dedication, we are proud of enormous milestones built by our talented people",
+  "employees": "Employees",
+  "employees-detail": "Including top-notch engineers, sales, business analysts, etc.",
+  "offices": "Offices",
+  "offices-detail": "2 official offices in Vietnam",
+  "clients": "Clients",
+  "clients-detail": "More than 50 clients from different countries all around the world",
+  "reviews-title": "Reviews about us",
+  "reviews-subtitle": "Our mission is building happiness for customers",
+  "reviews-subtitle-2": "Our product is customers satisfaction",
+  "reviews-list": {
+    "reviews-1": {
+      "subtitle": "Frontend Developer at HGK",
+      "content": "Softzone is great. They help me build my project and give me some advice for frontend architecture web app. Really cool."
+    },
+    "reviews-2": {
+      "subtitle": "Partner - Owner of Cooky App",
+      "content": "Sotfzone can fulfill the requirements for my app. You guys are amazing and I'm so excited for the app you've created."
+    },
+    "reviews-3": {
+      "subtitle": "Co Founder Mimi App",
+      "content": "The company has all the things I'm looking for, the direction, people, environment are all good."
+    },
+    "reviews-4": {
+      "subtitle": "Fullstack Developer at Softzone",
+      "content": "The company has all the things I'm looking for, the direction, people, environment are all good."
+    },
+    "reviews-5": {
+      "subtitle": "Fullstack Developer at Softzone",
+      "content": "Softzone is great place for your career. Most of the staff are young people."
+    }
+  }
+}
