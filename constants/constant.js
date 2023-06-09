@@ -49,6 +49,18 @@ export const TECHS = {
       height: 64
     },
     {
+      avatarUrl: '/images/techs/vue.png',
+      name: 'Vue',
+      width: 64,
+      height: 55
+    },
+    {
+      avatarUrl: '/images/techs/react.png',
+      name: 'React',
+      width: 64,
+      height: 55
+    },
+    {
       avatarUrl: '/images/techs/nodejs.png',
       name: 'Nodejs',
       width: 57,
@@ -71,18 +83,6 @@ export const TECHS = {
       name: 'MySQL',
       width: 64,
       height: 64
-    },
-    {
-      avatarUrl: '/images/techs/vue.png',
-      name: 'Vue',
-      width: 64,
-      height: 55
-    },
-    {
-      avatarUrl: '/images/techs/react.png',
-      name: 'React',
-      width: 64,
-      height: 55
     },
     {
       avatarUrl: '/images/techs/angular.png',

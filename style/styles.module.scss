@@ -496,3 +496,36 @@ $sz-text-secondary-light: #F2F2F2;
   background-size: 8px 1px;
   content: "";
 }
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 2000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+  /*   100% {
+      stroke-dashoffset: 4000;
+    } */
+}
+
+@keyframes dash-reverse {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 2000;
+  }
+  /*   100% {
+      stroke-dashoffset: 4000;
+    } */
+}
+
+.program-card-animate {
+  background: rgba(255,255,255,.8);
+  box-shadow: 0 4px 25px rgba(98,112,129,.1);
+  border-radius: 16px;
+  padding: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+}

@@ -117,7 +117,6 @@ export default function Header({lng, path}) {
             </span>
           </Link>
           <div className={'flex justify-center items-center'}>
-            <span className={`${styles['text-secondary-light']} mr-6`}>{lng}</span>
             <LocaleSwitcher lng={lng} path={path}/>
             <div className={'hidden lg:flex items-center justify-between space-x-14 font-medium'}>
               <div className={'w-24'}>
