@@ -529,3 +529,41 @@ $sz-text-secondary-light: #F2F2F2;
   width: 5rem;
   height: 5rem;
 }
+
+.hide {
+  transition: opacity 0.5s;
+}
+
+.animation-render {
+  transition: all 0.5s ease-in-out;
+  .bg-animate {
+    // background: $sz-bg-primary;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 25px rgba(98, 112, 129, 0.1);
+    border-radius: 16px;
+    font-weight: 600;
+  }
+  .header {
+    top: 10px;
+    left: 1rem;
+    width: 412px;
+    height: 2.5rem;
+    font-size: 1.25rem;
+    padding-left: 1rem;
+  }
+  .content {
+    top: 3.75rem;
+    left: 1rem;
+    width: 412px;
+    height: 150px;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+  }
+  .illusion {
+    top: 3.75rem;
+    right: 1rem;
+    width: 412px;
+    height: 150px;
+    font-size: 1.5rem;
+  }
+}
