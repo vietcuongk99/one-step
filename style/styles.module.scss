@@ -536,6 +536,7 @@ $sz-text-secondary-light: #F2F2F2;
 
 .animation-render {
   transition: all 0.5s ease-in-out;
+  color: $sz-text-secondary;
   .bg-animate {
     // background: $sz-bg-primary;
     background: rgba(255, 255, 255, 0.8);
@@ -546,10 +547,34 @@ $sz-text-secondary-light: #F2F2F2;
   .header {
     top: 10px;
     left: 1rem;
-    width: 412px;
+    width: 500px;
     height: 2.5rem;
     font-size: 1.25rem;
-    padding-left: 1rem;
+    padding-left: 0.25rem;
+    .header-logo {
+      width: 3.2rem;
+      height: 1.35rem;
+      margin-top: 0.6rem;
+      font-style: italic;
+    }
+    .header-search {
+      width: 17.5rem;
+      height: 1.35rem;
+      margin-top: 0.6rem;
+      margin-left: 1.5rem;
+      box-shadow: 0 4px 25px rgba(98, 112, 129, 0.1);
+      border-radius: 0.5rem;
+      font-size: 0.85rem;
+      padding: 1rem 0;
+    }
+    .header-toggle {
+      width: 3.6rem;
+      height: 1.35rem;
+      margin-top: 0.6rem;
+      margin-left: 3.5rem;
+      display: flex;
+      justify-content: center;
+    }
   }
   .content {
     top: 3.75rem;
@@ -565,5 +590,35 @@ $sz-text-secondary-light: #F2F2F2;
     width: 412px;
     height: 150px;
     font-size: 1.5rem;
+    .block-1 {
+      background: #F2B705;
+      position: absolute;
+      top: 6rem;
+      width: 11rem;
+      right: -2rem;
+      height: 19rem;
+      transform: rotate(45deg);
+      border-radius: 0.5rem;
+    }
+    .block-2 {
+      background: #f27405;
+      position: absolute;
+      left: 16rem;
+      top: 5rem;
+      width: 6rem;
+      height: 13rem;
+      border-radius: 0.5rem;
+      transform: rotate(45deg);
+    }
+    .block-3 {
+      background: #e5e7eb;
+      position: absolute;
+      left: 12rem;
+      top: 5rem;
+      width: 6rem;
+      height: 13rem;
+      border-radius: 0.5rem;
+      transform: rotate(45deg);
+    }
   }
 }

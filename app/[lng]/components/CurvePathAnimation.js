@@ -55,8 +55,8 @@ export default function CurvePathAnimation(
           <defs>
             <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
               <stop offset="0%"   stopColor={'#7fcbc3'}/>
-              <stop offset="100%"   stopColor={'#71bad9'}/>
               <stop offset="35%" stopColor={'#7fcbc3'}/>
+              <stop offset="100%"   stopColor={'#71bad9'}/>
             </linearGradient>
           </defs>
           <path
@@ -65,15 +65,15 @@ export default function CurvePathAnimation(
             stroke={'url(#gradient)'}
             strokeWidth="2"
             d={d}
-            style={{strokeDasharray: `${strokeDasharray}px`, strokeDashoffset: `${value}px`, transition: 'all 0.05s ease'}}
+            style={{strokeDasharray: `${strokeDasharray}px`, strokeDashoffset: `${value}px`, transition: `all ${timeOutMilis / 1000}s ease`}}
           />
         </svg>
-        <span
-          className={`absolute ${!(Math.floor(value) === 0 && !triggerReshape) ? `opacity-0 ${styles['hide']}` : 'opacity-100'} w-full h-full`}
+        <div
+          className={`absolute ${!(Math.floor(value) === 0 && !triggerReshape) ? `opacity-0 ${styles['hide']}` : 'opacity-100'}`}
           style={{transition: 'all 0.5s ease-in-out'}}
         >
           {childrenContent && typeof childrenContent === 'function' ? childrenContent() : <></>}
-        </span>
+        </div>
       </div>
     )
   }
