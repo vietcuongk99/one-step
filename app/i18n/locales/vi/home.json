@@ -1,6 +1,8 @@
 {
   "title": "Softzone",
   "web-dev": "Phát triển trang web",
+  "fe-web-dev": "Frontend",
+  "be-web-dev": "Backend",
   "web-dev-content": "Phát triển web full-stack để xây dựng các giải pháp web đổi mới và sẵn sàng ra mắt cho doanh nghiệp của bạn.",
   "mobile-dev": "Tạo ứng dụng di động",
   "mobile-dev-content": "Xây dựng các ứng dụng di động tùy chỉnh được thiết kế tốt và tối ưu hóa với UX thú vị cho cả iOS và Android.",
@@ -12,6 +14,7 @@
   "business-content": "Chúng tôi cung cấp các dịch vụ về: thương mại điện tử, thanh toán, ví điện tử, cộng tác viên, chat, Idap,... và nhiều dịch vụ khác.",
   "services-title": "Dịch vụ chúng tôi cung cấp",
   "services-subtitle": "Chúng tôi xây dựng trang web và ứng dụng di động với những công nghệ mới nhất",
+  "skills-title": "Những kỹ năng mà chúng tôi có",
   "steps-title": "Lộ trình cho sản phẩm next-gen",
   "steps-subtitle": "Cùng với Sotfzone, chúng tôi đảm bảo lợi ích bền vững và lâu dài của bạn nhờ khả năng đổi mới và thực thi nhanh chóng của chúng tôi.",
   "milestone-title": "những cột mốc",

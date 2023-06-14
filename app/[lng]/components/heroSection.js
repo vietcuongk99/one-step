@@ -3,10 +3,11 @@ import Image from "next/image";
 import HeroImage from './heroImage'
 import { useTranslation } from '@/app/i18n'
 import Link from "next/link";
+import HeroAnimation from "./heroAnimation";
 export default async function HeroSection({lng}) {
   const { t } = await useTranslation(lng)
   return (
-    <div className={`${styles['sz-background']}`}>
+    <div className={`${styles['sz-background']} pt-10 pb-6`}>
       <div
         className={`${styles['sz-container']} pt-10 pb-6 sm:pb-28 flex flex-col xl:flex-row items-center justify-between space-y-10 xl:space-x-10 xl:space-y-0`}>
         <div className="flex flex-col items-center xl:items-start">
@@ -42,7 +43,8 @@ export default async function HeroSection({lng}) {
             </button>
           </Link>
         </div>
-        <HeroImage />
+        {/*<HeroImage />*/}
+        <HeroAnimation />
       </div>
     </div>
   )

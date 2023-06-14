@@ -9,7 +9,7 @@ $sz-to-wink-light: #F27405;
 $sz-text-secondary-light: #F2F2F2;
 
 .sz-background {
-  background: $sz-bg-primary;
+  // background: $sz-bg-primary;
 }
 
 .glass-header {
@@ -164,10 +164,12 @@ $sz-text-secondary-light: #F2F2F2;
   color: $sz-text-secondary;
 }
 .text-secondary-light {
-  color: $sz-text-secondary-light;
+  // color: $sz-text-secondary-light;
+  color: $sz-text-secondary;
 }
 .text-sub-secondary-light {
-  color: $sz-text-secondary-light;
+  // color: $sz-text-secondary-light;
+  color: $sz-text-sub-secondary;
 }
 .text-text-sub-secondary {
   color: $sz-text-sub-secondary;

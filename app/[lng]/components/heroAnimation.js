@@ -2,66 +2,50 @@
 import styles from '@/style/styles.module.scss'
 import Image from "next/image";
 import {TECHS} from "@/constants/constant";
-import CurvePathAnimation from "@/app/[lng]/components/CurvePathAnimation";
+import SvgAnimation from "@/app/[lng]/components/SvgAnimation";
 import {useEffect, useState} from "react";
 export default function HeroAnimation() {
-  const EMPTY_GRID_ELEMENTS = 8
-  const showTech = [
-    {
-      name: 'JavaScript',
-      delayMilis: 1000,
-    },
-    {
-      name: 'Java',
-      delayMilis: 2000,
-    },
-    {
-      name: 'Spring Boot',
-      delayMilis: 4000,
-    },
-    {
-      name: 'React',
-      delayMilis: 5000,
-    },
-    {
-      name: 'React',
-      delayMilis: 5000,
-    },
-    {
-      name: 'React',
-      delayMilis: 5000,
-    },
-    {
-      name: 'React',
-      delayMilis: 5000,
-    },
-    {
-      name: 'React',
-      delayMilis: 5000,
-    },
+  const GRID_TOTAL = 18
+  const GRID_ARRAY = Array(GRID_TOTAL).fill({isShow: false})
+  const SHOW_TECH = [
+    {name: 'JavaScript', position: 1, delayMilis: 500},
+    {name: 'Java', position: 2, delayMilis: 500},
+    {name: 'Spring Boot', position: 15, delayMilis: 500},
+    {name: 'React', position: 16, delayMilis: 500}
   ]
-  const techRender = TECHS.LANGUAGE.filter(item => showTech.map(item => item.name).indexOf(item.name) >= 0)
+  const getTechRender = () => {
+    const techs = TECHS.LANGUAGE.filter((item, index) => SHOW_TECH.map(item => item.name).indexOf(item.name) >= 0)
+    for (const tech of techs) {
+      const showTech = SHOW_TECH.filter(item => item.name === tech.name)[0]
+      GRID_ARRAY[showTech.position] = {
+        ...showTech,
+        ...tech,
+        isShow: true,
+      }
+    }
+    return [...GRID_ARRAY]
+  }
   useEffect(() => {
     // setStartSequence([false, false, false, false])
   })
 
   return (
-    <div className={`${styles['animation-render']} relative`}>
+    <div className={`${styles['animation-render']} relative w-[820px] h-[500px]`}>
       <div className={'flex justify-center items-center'}>
-        <div className={`inline-block opacity-100 border-none m-0 p-0 absolute top-24`}>
-          <CurvePathAnimation
-            d={'M 20 10 H 490 Q 500 10 500 20 V 240 Q 500 250 490 250 H 20 Q 10 250 10 240 V 20 Q 10 10 20 10 M 100 20 L 370 20 Q 375 20 375 25 V 35 Q 375 40 370 40 H 100 Q 95 40 95 35 V 25 Q 95 20 100 20 M 25 20 H 65 Q 70 20 70 25 V 35 Q 70 40 65 40 H 25 Q 20 40 20 35 V 24 Q 20 20 25 20 M 435 20 H 485 Q 490 20 490 25 V 35 Q 490 40 485 40 H 435 Q 430 40 430 35 V 25 Q 430 20 435 20'}
-            widthSVG={510}
+        <div className={`inline-block opacity-100 border-none m-0 p-0 absolute top-[7.5rem]`}>
+          <SvgAnimation
+            d={'M 20 5 H 485 Q 500 5 500 20 V 240 Q 500 255 485 255 H 20 Q 5 255 5 240 V 20 Q 5 5 20 5 M 100 20 L 370 20 Q 375 20 375 25 V 35 Q 375 40 370 40 H 100 Q 95 40 95 35 V 25 Q 95 20 100 20 M 25 20 H 65 Q 70 20 70 25 V 35 Q 70 40 65 40 H 25 Q 20 40 20 35 V 24 Q 20 20 25 20 M 435 20 H 485 Q 490 20 490 25 V 35 Q 490 40 485 40 H 435 Q 430 40 430 35 V 25 Q 430 20 435 20'}
+            widthSVG={505}
             heightSVG={260}
             strokeDasharray={1500}
-            timeOutMilis={25}
+            timeOutMilis={15}
             isStart={false}
             strokeColor={'#05a'}
-            delayMilis={1200}
-            triggerReshape={false}
+            delayMilis={1000}
+            triggerReplay={false}
             childrenContent={() => {
               return (
-                <div className={`${styles['bg-animate']} relative w-[510px] h-[260px] rounded- overflow-hidden`}>
+                <div className={`${styles['bg-animate']} relative w-[495px] h-[250px] rounded- overflow-hidden`}>
                   <div className={`absolute flex ${styles['header']}`}>
                     <div className={`${styles['header-logo']}`}>
                       <span>Techs</span>
@@ -93,24 +77,22 @@ export default function HeroAnimation() {
             }}
           />
         </div>
-        <div className={'grid grid-cols-4 gap-y-48 gap-x-36'}>
+        <div className={'grid grid-cols-6 gap-y-32 gap-x-16'}>
           {
-            techRender.map((item, index) => {
-              if (index >= 4) return (
-                <div className={`${styles['program-card-animate']} flex justify-center items-center h-full w-full`}></div>
-              )
-              return (
-                (<div key={index}>
-                    <CurvePathAnimation
+            getTechRender().map((item, index) => {
+              return item.isShow
+                ? (
+                  <div key={index}>
+                    <SvgAnimation
                       d={'M 3 10 Q 3.006 2.998 10 2.991 H 73 Q 80 3 80 10 V 73 Q 80 80 73 80 H 10.016 Q 3 80 3 73 V 10.003'}
-                      widthSVG={85}
-                      heightSVG={85}
-                      timeOutMilis={35}
+                      widthSVG={82}
+                      heightSVG={82}
+                      timeOutMilis={30}
                       strokeDasharray={500}
                       isStart={false}
                       strokeColor={'#05a'}
-                      delayMilis={showTech[index].delayMilis}
-                      triggerReshape={false}
+                      delayMilis={item.delayMilis}
+                      triggerReplay={false}
                       childrenContent={() => {
                         return (
                           <div className={`${styles['program-card-animate']} flex justify-center items-center h-full w-full`}>
@@ -127,90 +109,57 @@ export default function HeroAnimation() {
                         )
                       }}
                     />
-
-                  </div>)
-              )
-            })
-          }
-          {
-            techRender.map((item, index) => {
-              if (index <= 3) return (
-                <div className={`${styles['program-card-animate']} flex justify-center items-center h-full w-full`}></div>
-              )
-              return (
-                (<div key={index}>
-                  <CurvePathAnimation
-                    d={'M 3 10 Q 3.006 2.998 10 2.991 H 73 Q 80 3 80 10 V 73 Q 80 80 73 80 H 10.016 Q 3 80 3 73 V 10.003'}
-                    widthSVG={85}
-                    heightSVG={85}
-                    timeOutMilis={35}
-                    strokeDasharray={500}
-                    isStart={false}
-                    strokeColor={'#05a'}
-                    delayMilis={showTech[index].delayMilis}
-                    triggerReshape={false}
-                    childrenContent={() => {
-                      return (
-                        <div className={`${styles['program-card-animate']} flex justify-center items-center h-full w-full`}>
-                            <span className={'box-border inline-block overflow-hidden opacity-100 border-none m-0 p-0 relative max-w-full max-h-full'}>
-                              <Image
-                                width={item.width / 2}
-                                height={item.height / 2}
-                                className={'block opacity-100 border-none m-0 p-0 max-w-full max-h-full'}
-                                alt="" aria-hidden="true"
-                                src={item.avatarUrl}
-                              />
-                            </span>
-                        </div>
-                      )
-                    }}
-                  />
-
-                </div>)
-              )
+                  </div>
+                )
+                : (
+                  <div key={index} className={`${styles['program-card-animate']} !shadow-none flex justify-center items-center h-full w-full`}></div>
+                )
             })
           }
         </div>
       </div>
-      <div className={'absolute top-20 left-12'}>
-        <CurvePathAnimation
-          widthSVG={50}
-          heightSVG={100}
+      <div className={'absolute top-[2.8rem] left-[14.3rem]'}>
+        <SvgAnimation
+          widthSVG={55}
+          heightSVG={85}
           strokeDasharray={130}
           isStart={false}
-          d={'M 8 3 V 83 Q 8 93 18 93 H 59'}
-          strokeColor={'#05a'}
-          delayMilis={1000}
-        />
-      </div>
-      <div className={'absolute top-16 left-[20.5rem]'}>
-        <CurvePathAnimation
-          widthSVG={100}
-          heightSVG={60}
-          strokeDasharray={130}
-          d={'M 2 2 H 56 Q 70 2 70 14 V 27'}
-          strokeColor={'#05a'}
-          delayMilis={3000}
-        />
-      </div>
-      <div className={'absolute top-16 right-[9.5rem]'}>
-        <CurvePathAnimation
-          widthSVG={100}
-          heightSVG={60}
-          strokeDasharray={130}
-          d={'M 2 2 H 56 Q 70 2 70 14 V 27'}
+          d={'M 5 5 H 40 Q 50 5 50 15 V 80'}
           strokeColor={'#05a'}
           delayMilis={5000}
         />
       </div>
-      <div className={'absolute top-20 right-[2rem]'}>
-        <CurvePathAnimation
-          widthSVG={60}
-          heightSVG={100}
+      <div className={'absolute top-[2.8rem] left-[23.3rem]'}>
+        <SvgAnimation
+          widthSVG={55}
+          heightSVG={85}
           strokeDasharray={130}
-          d={'M 55 1 L 55 22 Q 55 29 45 29 L 24 29'}
+          isStart={false}
+          d={'M 5 5 H 40 Q 50 5 50 15 V 80'}
           strokeColor={'#05a'}
           delayMilis={7000}
+        />
+      </div>
+      <div className={'absolute bottom-[2.9rem] right-[14.3rem]'}>
+        <SvgAnimation
+          widthSVG={55}
+          heightSVG={85}
+          strokeDasharray={130}
+          isStart={false}
+          d={'M 50 80 H 15 Q 5 80 5 70 V 5'}
+          strokeColor={'#05a'}
+          delayMilis={9000}
+        />
+      </div>
+      <div className={'absolute bottom-[2.9rem] right-[23.3rem]'}>
+        <SvgAnimation
+          widthSVG={55}
+          heightSVG={85}
+          strokeDasharray={130}
+          isStart={false}
+          d={'M 50 80 H 15 Q 5 80 5 70 V 5'}
+          strokeColor={'#05a'}
+          delayMilis={11000}
         />
       </div>
     </div>

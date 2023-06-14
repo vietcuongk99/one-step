@@ -1,6 +1,8 @@
 {
   "title": "Softzone",
   "web-dev": "Web development",
+  "fe-web-dev": "Frontend",
+  "be-web-dev": "Backend",
   "web-dev-content": "Full-stack customized web development to build innovate and ready-to-launch web solutions for your business.",
   "mobile-dev": "Mobile development",
   "mobile-dev-content": "Build well-designed and optimized custom mobile applications with a delightful UX for both iOS and Android.",
@@ -12,6 +14,7 @@
   "business-content": "We provide services on: e-commerce, payment, ewallet, collborator, chat, Idap, ... and more.",
   "services-title": "services we are providing",
   "services-subtitle": "We build websites and mobile applications with the latest technology",
+  "skills-title": "the skills we have",
   "steps-title": "steps to archieve next-gen product",
   "steps-subtitle": "Joining with Softzone, we ensure your sustainable and long-term benefits because of our ability of rapid innovation and execution.",
   "milestone-title": "our milestones",

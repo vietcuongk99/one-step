@@ -2,7 +2,7 @@ import styles from '@/style/styles.module.scss'
 import Section from '../components/section'
 import LaunchForm from "../components/launchForm";
 import { useTranslation } from '../../i18n'
-import CurvePathAnimation from "../components/CurvePathAnimation";
+import SvgAnimation from "../components/SvgAnimation";
 import HeroAnimation from "../components/heroAnimation";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, 'launch')
