@@ -4,16 +4,21 @@ import {useIntersection} from "@/hooks/useIntersection";
 import styles from '@/style/styles.module.scss'
 
 export default function SvgAnimation(
-  { childrenContent, widthSVG, heightSVG,
-    d, strokeDasharray,
-    timeOutMilis = 50, delayMilis = 0,
-    triggerReplay = true, delayReplay = 10000 }
+  { childrenContent,
+    widthSVG,
+    heightSVG,
+    d,
+    strokeDasharray,
+    timeOutMilis = 50,
+    delayMilis = 0,
+    triggerReplay = true,
+    delayReplay = 10000,
+    start= false,
+  },
 ) {
   const ref = useRef(null)
   const isOnScreen = useIntersection(ref, 0.1)
   const [value, setValue] = useState(strokeDasharray + 0.01)
-  const [start, setStart] = useState(false)
-  const [end, setEnd] = useState(false)
   const startAfter = (delayMilis) => {
     return new Promise(resolve => {
       setTimeout(() => {
@@ -22,34 +27,36 @@ export default function SvgAnimation(
     });
   }
   useEffect(() => {
-    if (isOnScreen && start) {
-      handleAnimation(triggerReplay)
-    }
+    if (isOnScreen && start) handleAnimation(triggerReplay)
     return () => {}
-  }, [value, isOnScreen, start, end])
+  }, [value, isOnScreen, start])
   useEffect(() => {
-    // setStartSequence([false, false, false, false])
     const startAnimation = async () => {
-      const start = await startAfter(delayMilis)
-      setStart(start)
+      await startAfter(delayMilis)
     }
     startAnimation().then(() => {})
   })
-
   const handleAnimation = (isReplay) => {
-    if (isOnScreen && Math.floor(value) > 0) {
-      setTimeout(() => {
-        setValue(value - 10)
-        if (Math.floor(value) === 0) setEnd(true)
-      }, timeOutMilis)
+    if (!isOnScreen || !start) {
+      setValue(strokeDasharray + 0.01)
     }
+    if (isReplay) {
+      if (isOnScreen && Math.floor(value) > 0) {
+        setTimeout(() => {
+          setValue(value - 10)
+        }, timeOutMilis)
+      }
 
-    if (isOnScreen && Math.floor(value) === 0 && isReplay && !end) {
-      setValue(strokeDasharray * 2)
+      if (isOnScreen && Math.floor(value) === 0) {
+        setValue(strokeDasharray * 2)
+      }
     }
-
-    if (!isOnScreen) {
-      setValue(strokeDasharray)
+    if (!isReplay) {
+      if (isOnScreen && Math.floor(value) > 0) {
+        setTimeout(() => {
+          setValue(value - 10)
+        }, timeOutMilis)
+      }
     }
   }
 

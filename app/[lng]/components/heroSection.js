@@ -44,7 +44,15 @@ export default async function HeroSection({lng}) {
           </Link>
         </div>
         {/*<HeroImage />*/}
-        <HeroAnimation />
+        <HeroAnimation
+          showTech={[
+            {name: 'JavaScript', position: 1, delayMilis: 3500},
+            {name: 'Java', position: 2, delayMilis: 3500},
+            {name: 'Spring Boot', position: 15, delayMilis: 3500},
+            {name: 'React', position: 16, delayMilis: 3500}
+          ]}
+          start={true}
+        />
       </div>
     </div>
   )

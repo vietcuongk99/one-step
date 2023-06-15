@@ -4,6 +4,7 @@ import LaunchForm from "../components/launchForm";
 import { useTranslation } from '../../i18n'
 import SvgAnimation from "../components/SvgAnimation";
 import HeroAnimation from "../components/heroAnimation";
+import ScrollAnimate from "@/app/[lng]/components/scrollAnimate";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, 'launch')
   return { title: t('title') }
@@ -27,9 +28,7 @@ export default async function Animate({ params: { lng } }) {
   }
   return (
     <>
-      <div className={'w-full flex items-center justify-center mt-52'}>
-        <HeroAnimation />
-      </div>
-    </>
+      <ScrollAnimate lng={lng}/>
+  </>
   )
 }

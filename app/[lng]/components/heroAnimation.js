@@ -3,16 +3,12 @@ import styles from '@/style/styles.module.scss'
 import Image from "next/image";
 import {TECHS} from "@/constants/constant";
 import SvgAnimation from "@/app/[lng]/components/SvgAnimation";
-import {useEffect, useState} from "react";
-export default function HeroAnimation() {
+import {useEffect, useRef, useState} from "react";
+import {useIntersection} from "@/hooks/useIntersection";
+export default function HeroAnimation({ name = null, showTech = [], start = false }) {
   const GRID_TOTAL = 18
   const GRID_ARRAY = Array(GRID_TOTAL).fill({isShow: false})
-  const SHOW_TECH = [
-    {name: 'JavaScript', position: 1, delayMilis: 500},
-    {name: 'Java', position: 2, delayMilis: 500},
-    {name: 'Spring Boot', position: 15, delayMilis: 500},
-    {name: 'React', position: 16, delayMilis: 500}
-  ]
+  const SHOW_TECH = [...showTech]
   const getTechRender = () => {
     const techs = TECHS.LANGUAGE.filter((item, index) => SHOW_TECH.map(item => item.name).indexOf(item.name) >= 0)
     for (const tech of techs) {
@@ -25,12 +21,9 @@ export default function HeroAnimation() {
     }
     return [...GRID_ARRAY]
   }
-  useEffect(() => {
-    // setStartSequence([false, false, false, false])
-  })
 
   return (
-    <div className={`${styles['animation-render']} relative w-[820px] h-[500px]`}>
+    <div className={`${styles['animation-render']} relative w-[820px] h-full`}>
       <div className={'flex justify-center items-center'}>
         <div className={`inline-block opacity-100 border-none m-0 p-0 absolute top-[7.5rem]`}>
           <SvgAnimation
@@ -41,8 +34,9 @@ export default function HeroAnimation() {
             timeOutMilis={15}
             isStart={false}
             strokeColor={'#05a'}
-            delayMilis={1000}
+            delayMilis={3500}
             triggerReplay={false}
+            start={start}
             childrenContent={() => {
               return (
                 <div className={`${styles['bg-animate']} relative w-[495px] h-[250px] rounded- overflow-hidden`}>
@@ -89,10 +83,10 @@ export default function HeroAnimation() {
                       heightSVG={82}
                       timeOutMilis={30}
                       strokeDasharray={500}
-                      isStart={false}
                       strokeColor={'#05a'}
                       delayMilis={item.delayMilis}
                       triggerReplay={false}
+                      start={start}
                       childrenContent={() => {
                         return (
                           <div className={`${styles['program-card-animate']} flex justify-center items-center h-full w-full`}>
@@ -111,9 +105,7 @@ export default function HeroAnimation() {
                     />
                   </div>
                 )
-                : (
-                  <div key={index} className={`${styles['program-card-animate']} !shadow-none flex justify-center items-center h-full w-full`}></div>
-                )
+                : (<div key={index} className={`${styles['program-card-animate']} !shadow-none flex justify-center items-center h-full w-full`}></div>)
             })
           }
         </div>
@@ -123,10 +115,11 @@ export default function HeroAnimation() {
           widthSVG={55}
           heightSVG={85}
           strokeDasharray={130}
-          isStart={false}
+          start={start}
           d={'M 5 5 H 40 Q 50 5 50 15 V 80'}
           strokeColor={'#05a'}
-          delayMilis={5000}
+          delayMilis={3500}
+          triggerReplay={false}
         />
       </div>
       <div className={'absolute top-[2.8rem] left-[23.3rem]'}>
@@ -134,10 +127,11 @@ export default function HeroAnimation() {
           widthSVG={55}
           heightSVG={85}
           strokeDasharray={130}
-          isStart={false}
+          start={start}
           d={'M 5 5 H 40 Q 50 5 50 15 V 80'}
           strokeColor={'#05a'}
-          delayMilis={7000}
+          delayMilis={3500}
+          triggerReplay={false}
         />
       </div>
       <div className={'absolute bottom-[2.9rem] right-[14.3rem]'}>
@@ -145,10 +139,11 @@ export default function HeroAnimation() {
           widthSVG={55}
           heightSVG={85}
           strokeDasharray={130}
-          isStart={false}
+          start={start}
           d={'M 50 80 H 15 Q 5 80 5 70 V 5'}
           strokeColor={'#05a'}
-          delayMilis={9000}
+          delayMilis={3500}
+          triggerReplay={false}
         />
       </div>
       <div className={'absolute bottom-[2.9rem] right-[23.3rem]'}>
@@ -156,10 +151,11 @@ export default function HeroAnimation() {
           widthSVG={55}
           heightSVG={85}
           strokeDasharray={130}
-          isStart={false}
+          start={start}
           d={'M 50 80 H 15 Q 5 80 5 70 V 5'}
           strokeColor={'#05a'}
-          delayMilis={11000}
+          delayMilis={3500}
+          triggerReplay={false}
         />
       </div>
     </div>
