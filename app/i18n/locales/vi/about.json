@@ -25,6 +25,21 @@
       "content": "Internet là một nơi rộng lớn, tuyệt vời với đầy đủ mọi thứ. Và một số trong những điều đó chỉ đơn giản là khơi dậy niềm vui. Chúng tôi muốn trở thành những người chịu trách nhiệm mang lại một chút niềm vui đó cho thế giới. Nếu hóa ra chúng ta cũng có niềm vui trong suốt chặng đường, thì hãy cứ như vậy! Trong 20 năm nữa, khi mọi người nghĩ lại khoảng thời gian họ đã dành cho Ars Futura, chúng tôi muốn họ cảm thấy như họ đã có những khoảng thời gian vui vẻ."
     }
   },
+  "web-dev": "Phát triển trang web",
+  "fe-web-dev": "Frontend",
+  "be-web-dev": "Backend",
+  "web-dev-content": "Phát triển web full-stack để xây dựng các giải pháp web đổi mới và sẵn sàng ra mắt cho doanh nghiệp của bạn.",
+  "mobile-dev": "Tạo ứng dụng di động",
+  "mobile-dev-content": "Xây dựng các ứng dụng di động tùy chỉnh được thiết kế tốt và tối ưu hóa với UX thú vị cho cả iOS và Android.",
+  "ux-ui-design": "Thiết kế UX/UI",
+  "design-content": "Hãy cho chúng tôi một ý tưởng và các nhà thiết kế của chúng tôi sẽ biến nó thành hiện thực. Chúng tôi cung cấp cho bạn thiết kế hiện đại nhất theo nhu cầu kinh doanh của bạn, đồng thời để tăng tỷ lệ chuyển đổi và thời gian dừng.",
+  "staff-aug": "Tăng trưởng nhân sự",
+  "staff-aug-content": "Mở rộng quy mô đội ngũ của bạn với đội ngũ lập trình viên tài năng hàng đầu. Giải bài toán tài nguyên trong dự án của bạn thật dễ dàng với Softzone.",
+  "business": "Kinh doanh",
+  "business-content": "Chúng tôi cung cấp các dịch vụ về: thương mại điện tử, thanh toán, ví điện tử, cộng tác viên, chat, Idap,... và nhiều dịch vụ khác.",
+  "services-title": "Dịch vụ chúng tôi cung cấp",
+  "services-subtitle": "Chúng tôi xây dựng trang web và ứng dụng di động với những công nghệ mới nhất",
+  "skills-title": "Những kỹ năng mà chúng tôi có",
   "start": "Bắt đầu hành trình với Softzone",
   "launch-your-product": "Triển khai dự án"
 }

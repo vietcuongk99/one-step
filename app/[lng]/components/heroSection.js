@@ -3,16 +3,17 @@ import Image from "next/image";
 import HeroImage from './heroImage'
 import { useTranslation } from '@/app/i18n'
 import Link from "next/link";
-import HeroAnimation from "./heroAnimation";
+import GridAnimate from "./Animation/gridAnimate";
+import HeroAnimate from "@/app/[lng]/components/Animation/heroAnimate";
 export default async function HeroSection({lng}) {
   const { t } = await useTranslation(lng)
   return (
-    <div className={`${styles['sz-background']} pt-10 pb-6`}>
+    <div className={`${styles['sz-background']} py-10 2xl:py-24`}>
       <div
         className={`${styles['sz-container']} pt-10 pb-6 sm:pb-28 flex flex-col xl:flex-row items-center justify-between space-y-10 xl:space-x-10 xl:space-y-0`}>
         <div className="flex flex-col items-center xl:items-start">
           <h1 className={`${styles['home-title']} ${styles['text-secondary-light']}`}>
-            <div>{t('your-idea')}</div>
+            <div className={'text-center 2xl:text-left'}>{t('your-idea')}</div>
             <div className="flex items-center text-center">
               <p className={`relative ${styles['text-text-highlight']}`}>
                 <span>{t('our-solution')}</span>
@@ -22,6 +23,7 @@ export default async function HeroSection({lng}) {
           <p className={`mt-16 mb-9 max-w-3xl text-center xl:text-left ${styles['text-sub-secondary-light']}`}>
             {t('heroSection.line1')}<br/>
             {t('heroSection.line2')}<br/>
+            {t('heroSection.line3')}<br/>
           </p>
           <Link href={`/${lng}/launch`} className={'w-full flex items-center justify-center xl:justify-normal'}>
             <button className={`${styles.btn} ${styles['gradient-border']} z-10 flex items-center relative group rounded-md overflow-hidden gradient-border bg-white mx-auto md:mx-0 w-full`}>
@@ -44,15 +46,18 @@ export default async function HeroSection({lng}) {
           </Link>
         </div>
         {/*<HeroImage />*/}
-        <HeroAnimation
-          showTech={[
-            {name: 'JavaScript', position: 1, delayMilis: 3500},
-            {name: 'Java', position: 2, delayMilis: 3500},
-            {name: 'Spring Boot', position: 15, delayMilis: 3500},
-            {name: 'React', position: 16, delayMilis: 3500}
-          ]}
-          start={true}
-        />
+        <div className={'hidden 2xl:block'}>
+          {/*<HeroAnimation*/}
+          {/*  showTech={[*/}
+          {/*    {name: 'JavaScript', position: 1, delayMilis: 1000, scale: 0.75},*/}
+          {/*    {name: 'Java', position: 2, delayMilis: 1000, scale: 0.75},*/}
+          {/*    {name: 'Spring', position: 15, delayMilis: 1000, scale: 0.75},*/}
+          {/*    {name: 'React', position: 16, delayMilis: 1000, scale: 0.75}*/}
+          {/*  ]}*/}
+          {/*  start={true}*/}
+          {/*/>*/}
+          <HeroAnimate start={true} />
+        </div>
       </div>
     </div>
   )

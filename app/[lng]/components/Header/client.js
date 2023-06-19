@@ -65,7 +65,7 @@ export default function Header({lng, path}) {
         className={`absolute ${isOpen ? 'block' : 'hidden'} top-0 right-0 px-5 pt-2 bg-white lg:hidden transition-all duration-200 z-50 m-4 ${styles['sidebar-custom-w']}`}
       >
         <div className={`relative flex items-center`}>
-          <div className="text-2xl text-col font-bold" style={{color: "#5d69e3"}}>Softzone</div>
+          <div className={`${styles['text-text-highlight']} text-2xl text-col font-bold`}>Softzone</div>
           <div className={'text-gray-500 w-10 h-10 relative focus:outline-none bg-white ml-auto cursor-pointer'}
                onClick={onClose}>
             <div className={'block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2'}><span
@@ -90,7 +90,7 @@ export default function Header({lng, path}) {
             setOpenDrawer(false);
           }} style={{borderRadius: 20}} className={`${styles['custom-btn']} ${styles['btn-primary']}`}>
             <span className="text-lg">{t('launch-your-product')} </span>
-            <span className={"ml-1"}>🚀</span>
+            <span className={"ml-1"}>💻</span>
           </button>
         </div>
       </div>
@@ -128,7 +128,7 @@ export default function Header({lng, path}) {
                 <Link href={`/${lng}/launch`}>
                   <button className={`${styles.btn} ${styles['btn-primary']} px-5 h-10 !w-64`}>
                     <span>{t('launch-your-product')} </span>
-                    <span className={"ml-1"}>🚀</span>
+                    <span className={"ml-1"}>💻</span>
                   </button>
                 </Link>
               </div>

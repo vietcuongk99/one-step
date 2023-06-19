@@ -2,7 +2,7 @@ import styles from "@/style/styles.module.scss";
 import Image from "next/image";
 export default function ProgramCard({name, avatarUrl, width, height}) {
   return (
-    <div className={`${styles['program-card']}`}>
+    <div className={`${styles['program-card']} scale-75`}>
       <div className="flex items-center justify-center flex-col gap-x-4">
         <div className="overflow-hidden">
           <span className={'box-border inline-block overflow-hidden opacity-100 border-none m-0 p-0 relative max-w-full max-h-full'}>

@@ -49,5 +49,10 @@
       "subtitle": "Fullstack Developer at Softzone",
       "content": "Softzone là một nơi tuyệt vời cho sự nghiệp của bạn. Phần lớn nhân sự ở đây là người trẻ."
     }
-  }
+  },
+  "business-title": "Business",
+  "language-title": "Language",
+  "language-content": "We support a variety of languages for your project. Choose your desired language and we will use it to bring your project idea to life.",
+  "config-title": "DevOps",
+  "config-content": "We use the latest technologies to optimize the configuration for your project. We make sure your project is well implemented and operated."
 }

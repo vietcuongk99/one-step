@@ -25,6 +25,21 @@
       "content": "The Internet is a huge, wonderful place filled with all sorts of things. And some of those things simply spark joy. We want to be the ones responsible for putting a bit of that joy into the world. If it also turns out we had fun along the way, so be it! In 20 years’ time, when people think back on their time spent with Ars Futura, we’d like them to feel like they had some good times."
     }
   },
+  "web-dev": "Web development",
+  "fe-web-dev": "Frontend",
+  "be-web-dev": "Backend",
+  "web-dev-content": "Full-stack customized web development to build innovate and ready-to-launch web solutions for your business.",
+  "mobile-dev": "Mobile development",
+  "mobile-dev-content": "Build well-designed and optimized custom mobile applications with a delightful UX for both iOS and Android.",
+  "ux-ui-design": "UI/UX Design",
+  "design-content": "Give us an idea, and our designers bring it to life. We offer you state-of-the-art design according to your business needs, and also to increase the conversion rate and dwell time.",
+  "staff-aug": "Staff Augmentation",
+  "staff-aug-content": "Scale up your team with the best talent pool of developers in Vietnam. Solving the problem of resource in your project is too easy with Softzone.",
+  "business": "Business",
+  "business-content": "We provide services on: e-commerce, payment, ewallet, collborator, chat, Idap, ... and more.",
+  "services-title": "services we are providing",
+  "services-subtitle": "We build websites and mobile applications with the latest technology",
+  "skills-title": "the skills we have",
   "start": "START THE JOURNEY WITH SOFTZONE",
   "launch-your-product": "Launch your product"
 }

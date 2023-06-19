@@ -58,7 +58,7 @@ export const TECHS = {
       avatarUrl: '/images/techs/react.png',
       name: 'React',
       width: 64,
-      height: 55
+      height: 56
     },
     {
       avatarUrl: '/images/techs/nodejs.png',
@@ -68,7 +68,7 @@ export const TECHS = {
     },
     {
       avatarUrl: '/images/techs/spring-boot.png',
-      name: 'Spring Boot',
+      name: 'Spring',
       width: 64,
       height: 64
     },
@@ -106,7 +106,7 @@ export const TECHS = {
     },
     {
       avatarUrl: '/images/techs/k8s.png',
-      name: 'Kubernetes',
+      name: 'K8S',
       width: 64,
       height: 62
     },
@@ -138,7 +138,7 @@ export const TECHS = {
       avatarUrl: '/images/techs/grafana.png',
       name: 'Grafana',
       width: 64,
-      height: 64
+      height: 67
     },
     {
       avatarUrl: '/images/techs/sonarqube.png',
@@ -160,3 +160,41 @@ export const TECHS = {
     },
   ]
 }
+export const SERVICES = [
+  {
+    avatarUrl: '/images/services/cart.png',
+    name: 'cart',
+    width: 64,
+    height: 64
+  },
+  {
+    avatarUrl: '/images/services/ldap.png',
+    name: 'ldap',
+    width: 64,
+    height: 64
+  },
+  {
+    avatarUrl: '/images/services/payment.png',
+    name: 'payment',
+    width: 64,
+    height: 64
+  },
+  {
+    avatarUrl: '/images/services/ewallet.png',
+    name: 'ewallet',
+    width: 64,
+    height: 64
+  },
+  {
+    avatarUrl: '/images/services/collaborator.png',
+    name: 'collaborator',
+    width: 64,
+    height: 64
+  },
+  {
+    avatarUrl: '/images/services/chat.png',
+    name: 'chat',
+    width: 64,
+    height: 64
+  },
+]
