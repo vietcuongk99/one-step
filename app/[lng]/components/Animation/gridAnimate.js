@@ -70,14 +70,30 @@ export default function GridAnimate(
     <div className={`${styles['animation-render']} relative w-[820px] h-full`}>
       <div className={'flex justify-center items-center'}>
         {
-
+          isDefaultChildren ? (
+            <div className={`inline-block opacity-100 border-none m-0 p-0 absolute top-[7.5rem]`}>
+              <SvgAnimation
+                d={'M 20 5 H 485 Q 500 5 500 20 V 240 Q 500 255 485 255 H 20 Q 5 255 5 240 V 20 Q 5 5 20 5 M 100 20 L 370 20 Q 375 20 375 25 V 35 Q 375 40 370 40 H 100 Q 95 40 95 35 V 25 Q 95 20 100 20 M 25 20 H 65 Q 70 20 70 25 V 35 Q 70 40 65 40 H 25 Q 20 40 20 35 V 24 Q 20 20 25 20 M 435 20 H 485 Q 490 20 490 25 V 35 Q 490 40 485 40 H 435 Q 430 40 430 35 V 25 Q 430 20 435 20'}
+                widthSVG={505}
+                heightSVG={260}
+                strokeDasharray={1500}
+                timeOutPath={10}
+                isStart={false}
+                strokeColor={'#05a'}
+                delayMilis={500}
+                triggerReplay={false}
+                start={start}
+                childrenContent={getChildrenContent()}
+              />
+            </div>
+          ) : (<></>)
         }
         <div className={`grid grid-cols-6 ${isDefaultChildren ? 'gap-y-32 gap-x-16' : 'gap-y-16 gap-x-8'}`}>
           {
             getItemsRender().map((item, index) => {
               return item.isShow
                 ? (
-                  <div key={index} className={`scale-${item.scale * 100} ${styles['grow']}`}>
+                  <div key={index} className={`scale-${item.scaleFrom * 100} hover:scale-${item.scaleTo * 100} ${styles['grow']}`}>
                     <SvgAnimation
                       d={'M 3 10 Q 3.006 2.998 10 2.991 H 73 Q 80 3 80 10 V 73 Q 80 80 73 80 H 10.016 Q 3 80 3 73 V 10.003'}
                       widthSVG={82}

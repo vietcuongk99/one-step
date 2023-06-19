@@ -3,6 +3,7 @@ import Image from "next/image"
 import HeroImageBottom from './heroImageBottom'
 import { useTranslation } from '@/app/i18n'
 import Link from "next/link";
+import HeroAnimation from "../components/heroAnimation";
 export default async function HeroSectionBottom({lng}) {
   const { t } = await useTranslation(lng, 'common')
   return (

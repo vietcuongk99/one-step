@@ -74,7 +74,7 @@ export default function HeroAnimation({ name = null, showTech = [], start = fals
         <div className={'grid grid-cols-6 gap-y-32 gap-x-16'}>
           {
             getTechRender().map((item, index) => {
-              return item.isShow
+              return item && item.isShow
                 ? (
                   <div key={index}>
                     <SvgAnimation
