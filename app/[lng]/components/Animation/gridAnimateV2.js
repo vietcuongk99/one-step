@@ -1,10 +1,7 @@
 "use client"
 import styles from '@/style/styles.module.scss'
 import Image from "next/image";
-import {TECHS} from "@/constants/constant";
 import SvgAnimation from "./SvgAnimation";
-import {useEffect, useRef, useState} from "react";
-import {useIntersection} from "@/hooks/useIntersection";
 import {useTranslation} from "@/app/i18n/client";
 export default function GridAnimate(
   { lng,

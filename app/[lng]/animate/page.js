@@ -4,6 +4,8 @@ import LaunchForm from "../components/launchForm";
 import { useTranslation } from '../../i18n'
 import ScrollAnimate from "../components/Animation/scrollAnimate";
 import HeroAnimate from "../components/Animation/heroAnimate";
+import StepAnimate from "@/app/[lng]/components/Animation/stepAnimate";
+import GridAnimate from "@/app/[lng]/components/Animation/gridAnimateV2";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, 'launch')
   return { title: 'Animation' }
@@ -28,7 +30,8 @@ export default async function Animate({ params: { lng } }) {
   return (
     <>
       {/*<ScrollAnimate lng={lng}/>*/}
-      <HeroAnimate start={true} />
-  </>
+      {/*<StepAnimate start={true} />*/}
+      <GridAnimate />
+    </>
   )
 }

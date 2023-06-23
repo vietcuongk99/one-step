@@ -3,14 +3,16 @@ import styles from '@/style/styles.module.scss'
 import SvgAnimation from "./SvgAnimation";
 import {useEffect, useRef, useState} from "react";
 import {useIntersection} from "@/hooks/useIntersection";
-export default function HeroAnimate({ start = false, isOnScreen = true }) {
+import {useTranslation} from "@/app/i18n/client";
+export default function HeroAnimate({ lng, start = false, isOnScreen = true }) {
+  const { t } = useTranslation(lng, 'home')
 
   return (
-    <div className={`${styles['animation-render']} relative w-[820px] h-[600px]`}>
+    <div className={`${styles['animation-render']} relative w-[800px] h-[500px]`}>
       <div className={'flex justify-center items-center'}>
-        <div className={`inline-block opacity-100 border-none m-0 p-0 absolute top-[5rem]`}>
+        <div className={`inline-block opacity-100 border-none m-0 p-0 absolute top-[2rem] 2xl:top-[5rem]`}>
           <SvgAnimation
-            d={'M 10 50 L 525 50 V 20 V 20 Q 525 10 535 10 H 730 Q 740 10 740 20 V 400 Q 740 410 730 410 V 450 H 10 V 50'}
+            d={'M 20 50 L 525 50 V 15 V 15 Q 525 5 535 5 H 730 Q 740 5 740 15 V 395 Q 740 405 730 405 V 450 H 20 Q 10 450 10 440 V 60 Q 10 50 20 50 M 730 405 L 535 405 Q 525 405 525 395 V 50'}
             widthSVG={750}
             heightSVG={460}
             strokeDasharray={2500}
@@ -34,7 +36,7 @@ export default function HeroAnimate({ start = false, isOnScreen = true }) {
                             <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"/>
                           </svg>
                         </div>
-                        <div className={'ml-3'}><span>search</span></div>
+                        <div className={'ml-3'}><span>{t('hero-animate.search')}</span></div>
                       </div>
                     </div>
                     <div className={`${styles['web-section']}`}>
@@ -46,32 +48,32 @@ export default function HeroAnimate({ start = false, isOnScreen = true }) {
                         </div>
                       </div>
                       <div className={`${styles['right']} p-3`}>
-                        <div className={'font-bold'}>Total</div><hr />
+                        <div className={'font-bold'}>{t('hero-animate.total')}</div><hr />
                         <div className={'grid grid-cols-4 mb-5'}>
                           <div className={''}>
-                            <div>User</div>
+                            <div>{t('hero-animate.user')}</div>
                             <div>1.000</div>
                           </div>
                           <div className={''}>
-                            <div>Balance</div>
+                            <div>{t('hero-animate.balance')}</div>
                             <div>$2.000.000</div>
                           </div>
                           <div className={''}>
-                            <div>Account</div>
+                            <div>{t('hero-animate.account')}</div>
                             <div>1.000</div>
                           </div>
                           <div className={''}>
-                            <div>Active</div>
+                            <div>{t('hero-animate.active')}</div>
                             <div>1.000</div>
                           </div>
                         </div>
-                        <div className={'font-bold'}>Report</div>
+                        <div className={'font-bold'}>{t('hero-animate.report')}</div>
                         <div className={'grid grid-cols-2 mb-3'}>
                           <div className={'border border-solid p-3 border-r-0'}>
-                            <div><span>Balance</span><span className={'text-green-600 ml-1'}>+46.5%</span></div>
+                            <div><span>{t('hero-animate.balance')}</span><span className={'text-green-600 ml-1'}>+46.5%</span></div>
                             <div className={'flex justify-between'}>
-                              <div className={'text-green-600'}>$4.100.000</div>
-                              <div className={'text-gray-500'}>$3.921.222</div>
+                              <div className={'text-green-600'}>{t('hero-animate.price1')}</div>
+                              <div className={'text-gray-500'}>{t('hero-animate.price2')}</div>
                             </div>
                             <div>
                               <svg width="300px" height="100px">
@@ -100,13 +102,13 @@ export default function HeroAnimate({ start = false, isOnScreen = true }) {
                               </svg>
                               <hr />
                               <div className={'flex justify-between'}>
-                                <div>Jul 20</div>
-                                <div>Aug 20</div>
+                                <div>{t('hero-animate.fromDate')}</div>
+                                <div>{t('hero-animate.toDate')}</div>
                               </div>
                             </div>
                           </div>
                           <div className={'border border-solid p-3'}>
-                            <div><span>User</span><span className={'text-green-600 ml-1'}>+50.5%</span></div>
+                            <div><span>{t('hero-animate.user')}</span><span className={'text-green-600 ml-1'}>+50.5%</span></div>
                             <div className={'flex justify-between'}>
                               <div className={'text-green-600'}>3.100</div>
                               <div className={'text-gray-500'}>2.680</div>
@@ -138,8 +140,8 @@ export default function HeroAnimate({ start = false, isOnScreen = true }) {
                               </svg>
                               <hr />
                               <div className={'flex justify-between'}>
-                                <div>Jul 20</div>
-                                <div>Aug 20</div>
+                                <div>{t('hero-animate.fromDate')}</div>
+                                <div>{t('hero-animate.toDate')}</div>
                               </div>
                             </div>
                           </div>
@@ -153,23 +155,23 @@ export default function HeroAnimate({ start = false, isOnScreen = true }) {
                     </div>
                     <hr />
                     <div className={`${styles['form-wrapper']}`}>
-                      <label>Name</label>
+                      <label>{t('hero-animate.name')}</label>
                       <div className={`${styles['form-input']}`}></div>
                     </div>
                     <div className={`${styles['form-wrapper']}`}>
-                      <label>Email</label>
+                      <label>{t('hero-animate.email')}</label>
                       <div className={`${styles['form-input']}`}></div>
                     </div>
                     <div className={`${styles['form-wrapper']}`}>
-                      <label>Card Information</label>
-                      <div className={`${styles['form-input']}`}>Number</div>
+                      <label>{t('hero-animate.card-info')}</label>
+                      <div className={`${styles['form-input']}`}>{t('hero-animate.number')}</div>
                     </div>
                     <div className={`${styles['form-wrapper']}`}>
-                      <label>Country</label>
+                      <label>{t('hero-animate.country')}</label>
                       <div className={`${styles['form-input']}`}></div>
                     </div>
                     <div className={`${styles['form-wrapper']}`}>
-                      <div className={`${styles['pay-btn']}`}>Pay</div>
+                      <div className={`${styles['pay-btn']}`}>{t('hero-animate.pay')}</div>
                     </div>
                   </div>
                 </div>

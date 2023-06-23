@@ -162,8 +162,8 @@ export const TECHS = {
 }
 export const SERVICES = [
   {
-    avatarUrl: '/images/services/cart.png',
-    name: 'cart',
+    avatarUrl: '/images/services/ecommerce.png',
+    name: 'ecommerce',
     width: 64,
     height: 64
   },

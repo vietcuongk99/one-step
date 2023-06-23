@@ -8,19 +8,15 @@ import HeroAnimate from "@/app/[lng]/components/Animation/heroAnimate";
 export default async function HeroSection({lng}) {
   const { t } = await useTranslation(lng)
   return (
-    <div className={`${styles['sz-background']} py-10 2xl:py-24`}>
+    <div className={`${styles['sz-background']} px-5 py-10 2xl:py-16 2xl:px-10`}>
       <div
         className={`${styles['sz-container']} pt-10 pb-6 sm:pb-28 flex flex-col xl:flex-row items-center justify-between space-y-10 xl:space-x-10 xl:space-y-0`}>
         <div className="flex flex-col items-center xl:items-start">
           <h1 className={`${styles['home-title']} ${styles['text-secondary-light']}`}>
-            <div className={'text-center 2xl:text-left'}>{t('your-idea')}</div>
-            <div className="flex items-center text-center">
-              <p className={`relative ${styles['text-text-highlight']}`}>
-                <span>{t('our-solution')}</span>
-              </p>
-            </div>
+            <div className={'text-center md:text-left'}>{t('your-idea')}</div>
+            <div className={`text-center md:text-left ${styles['text-text-highlight']}`}>{t('our-solution')}</div>
           </h1>
-          <p className={`mt-16 mb-9 max-w-3xl text-center xl:text-left ${styles['text-sub-secondary-light']}`}>
+          <p className={`text-xl mt-16 mb-9 max-w-3xl text-center xl:text-left ${styles['text-sub-secondary-light']}`}>
             {t('heroSection.line1')}<br/>
             {t('heroSection.line2')}<br/>
             {t('heroSection.line3')}<br/>
@@ -46,7 +42,7 @@ export default async function HeroSection({lng}) {
           </Link>
         </div>
         {/*<HeroImage />*/}
-        <div className={'hidden 2xl:block'}>
+        <div className={'hidden md:block'}>
           {/*<HeroAnimation*/}
           {/*  showTech={[*/}
           {/*    {name: 'JavaScript', position: 1, delayMilis: 1000, scale: 0.75},*/}

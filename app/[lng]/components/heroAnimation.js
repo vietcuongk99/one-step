@@ -23,7 +23,7 @@ export default function HeroAnimation({ name = null, showTech = [], start = fals
   }
 
   return (
-    <div className={`${styles['animation-render']} relative w-[820px] h-full`}>
+    <div className={`${styles['animation-render']} relative w-[750px] h-full`}>
       <div className={'flex justify-center items-center'}>
         <div className={`inline-block opacity-100 border-none m-0 p-0 absolute top-[7.5rem]`}>
           <SvgAnimation
@@ -39,7 +39,7 @@ export default function HeroAnimation({ name = null, showTech = [], start = fals
             start={start}
             childrenContent={() => {
               return (
-                <div className={`${styles['bg-animate']} relative w-[495px] h-[250px] rounded- overflow-hidden`}>
+                <div className={`${styles['bg-animate']} relative w-[495px] h-[250px] overflow-hidden`}>
                   <div className={`absolute flex ${styles['header']}`}>
                     <div className={`${styles['header-logo']}`}>
                       <span>Techs</span>

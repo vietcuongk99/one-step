@@ -11,6 +11,7 @@ import styles from '@/style/styles.module.scss'
 import Image from 'next/image'
 import {TECHS} from "@/constants/constant";
 import ScrollAnimate from "./components/Animation/scrollAnimate";
+import StepAnimate from "@/app/[lng]/components/Animation/stepAnimate";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, 'home')
   return { title: t('title') }
@@ -55,10 +56,13 @@ export default async function Page({ params: { lng } }) {
         <Header lng={lng} path={'/'}/>
         <div className={'mt-10 lg:mt-14'}>
           <HeroSection lng={lng} />
-          <div className={`${styles['sz-container']} mt-32`}>
-            <ScrollAnimate />
+          <div className={`${styles['sz-container']}`}>
+            <ScrollAnimate lng={lng} />
           </div>
-          <HeroSectionBottom lng={lng} />
+          {/*<HeroSectionBottom lng={lng} />*/}
+        </div>
+        <div className={'w-full mt-20 xl:mb-20'}>
+          <StepAnimate lng={lng} start={true} />
         </div>
         <Section title={null} subtitle={null} content={sectionTwoContent} wrapperContainer={false}/>
         <Footer lng={lng}/>

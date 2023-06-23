@@ -55,14 +55,14 @@ export default function LaunchBudget ({lng, currentStep, setPopover}) {
             <div
               className={`relative block content-none w-12 h-12 rounded-full select-none cursor-pointer`}>
               <div
-                className={`${styles['animate-rocket']} ${styles['text-wink-dark']} absolute left-5 md:left-5 -top-5 md:-top-5 text-center text-sm w-full h-full`}>
+                className={`absolute text-center text-sm w-full h-full -top-10`}>
                 <Image
                   width={'50'} height={'50'}
-                  alt="astronaut"
-                  src="/images/astronaut.png"
+                  alt="run"
+                  src="/images/icons/one-step-run.png"
                   decoding="async" data-nimg="intrinsic"
                   className={`absolute inset-0 box-border p-0 border-none m-auto block w-full h-full w-8 h-8 lg:w-full lg:h-full`}
-                  srcSet="/images/astronaut.png 1x, /images/astronaut.png 2x"
+                  srcSet="/images/icons/one-step-run.png 1x, /images/icons/one-step-run.png 2x"
                 />
               </div>
             </div>

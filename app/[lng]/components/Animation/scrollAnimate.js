@@ -33,14 +33,15 @@ export default function ScrollAnimate({ lng }) {
   const renderAnimationSection1 = (start) => {
     return (
       <GridAnimate
+        lng={lng}
         items={SERVICES}
         itemShow={[
-          {name: 'cart', position: 1, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'ldap', position: 2, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'payment', position: 4, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'ewallet', position: 13, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'collaborator', position: 15, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'chat', position: 16, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25}
+          {name: 'ecommerce', isTranslated: true, position: 1, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'ldap', isTranslated: true, position: 2, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'payment', isTranslated: true, position: 4, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'ewallet', isTranslated: true, position: 14, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'collaborator', isTranslated: true, position: 16, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'chat', isTranslated: true, position: 17, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25}
         ]}
         isOnScreen={start}
         start={start}
@@ -51,18 +52,19 @@ export default function ScrollAnimate({ lng }) {
   const renderAnimationSection2 = (start) => {
     return (
       <GridAnimate
+        lng={lng}
         items={TECHS.LANGUAGE}
         itemShow={[
-          {name: 'JavaScript', position: 1, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Java', position: 2, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Vue', position: 4, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'React', position: 7, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'NextJS', position: 9, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Nodejs', position: 10, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Spring', position: 12, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'mongoDB', position: 13, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Angular', position: 6, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'MySQL', position: 15, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'JavaScript', position: 2, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Java', position: 3, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Vue', position: 5, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'React', position: 8, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'NextJS', position: 10, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Nodejs', position: 11, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Spring', position: 13, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'mongoDB', position: 15, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Angular', position: 7, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'MySQL', position: 16, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
         ]}
         isOnScreen={start}
         start={start}
@@ -73,18 +75,19 @@ export default function ScrollAnimate({ lng }) {
   const renderAnimationSection3 = (start) => {
     return (
       <GridAnimate
+        lng={lng}
         items={TECHS.OPS}
         itemShow={[
-          {name: 'Docker', position: 0, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'K8S', position: 3, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Nginx', position: 4, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Longhorn', position: 10, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Kibana', position: 9, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Rancher', position: 12, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Jenkins', position: 15, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Grafana', position: 13, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Sonarqube', position: 6, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Elasticsearch', position: 8, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Docker', position: 1, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'K8S', position: 4, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Nginx', position: 5, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Longhorn', position: 11, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Kibana', position: 10, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Rancher', position: 8, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Jenkins', position: 16, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Grafana', position: 15, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Sonarqube', position: 2, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Elasticsearch', position: 9, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
         ]}
         isOnScreen={start}
         start={start}
@@ -97,16 +100,17 @@ export default function ScrollAnimate({ lng }) {
     <>
       <div>
         <div style={{position: 'relative'}}>
-          <div className={'grid gap-y-48'}>
+          <div>
             <div id={'row1'}>
-              <div className={'grid gap-x-32 grid-cols-1 2xl:grid-cols-2'}>
-                <div className={'flex justify-center items-center h-[700px]'}>
-                  <div className={'w-[400px] p-12'}>
-                    <div ref={refSection1} className={`${styles['text-text-highlight']} text-2xl uppercase font-bold mb-4`}>{t('business-title')}</div>
-                    <div>{t('business-content')}</div>
+              <div className={'grid gap-x-32 grid-cols-1 xl:grid-cols-3 2xl:grid-cols-2'}>
+                <div className={'flex xl:justify-center items-center xl:h-[700px] col-span-1 2xl:col-auto'}>
+                  <div className={'w-auto 2xl:w-[30rem] p-12'}>
+                    <div ref={refSection1} className={`${styles['text-text-highlight']} text-4xl uppercase font-bold mb-4`}>{t('business-title')}</div>
+                    <div className={`${styles['text-text-secondary']} uppercase text-2xl font-bold mb-8`}>{t('business-subtitle')}</div>
+                    <div className={'text-xl'}>{t('business-content')}</div>
                   </div>
                 </div>
-                <div className={'relative self-start hidden 2xl:block'}>
+                <div className={'relative self-start hidden xl:block col-span-2 2xl:col-auto'}>
                   <div style={{position: 'absolute', top: 0, left: 0, zIndex: showAnimation(isOnScreen1) ? 1 : 0}} className={'h-[2000px]'}>
                     <div style={{position: 'sticky', top: `calc(50% - 200px)`, transition: 'opacity 0.5s ease'}} className={`${showAnimation(isOnScreen1) ? 'opacity-100' : 'opacity-0'}`}>
                       {renderAnimationSection1(showAnimation(isOnScreen1))}
@@ -124,24 +128,26 @@ export default function ScrollAnimate({ lng }) {
                   </div>
                 </div>
               </div>
-              <div className={'grid gap-x-32 grid-cols-1 2xl:grid-cols-2'}>
-                <div className={'flex justify-center items-center h-[700px]'}>
-                  <div className={'w-[400px] p-12'}>
-                    <div ref={refSection2} className={`${styles['text-text-highlight']} text-2xl uppercase font-bold mb-4`}>{t('language-title')}</div>
-                    <div>{t('language-content')}</div>
+              <div className={'grid gap-x-32 grid-cols-1 xl:grid-cols-3 2xl:grid-cols-2'}>
+                <div className={'flex xl:justify-center items-center xl:h-[700px] col-span-1 2xl:col-auto'}>
+                  <div className={'w-auto 2xl:w-[30rem] p-12'}>
+                    <div ref={refSection2} className={`${styles['text-text-highlight']} text-4xl uppercase font-bold mb-4`}>{t('language-title')}</div>
+                    <div className={`${styles['text-text-secondary']} uppercase text-2xl font-bold mb-8`}>{t('language-subtitle')}</div>
+                    <div className={'text-xl'}>{t('language-content')}</div>
                   </div>
                 </div>
-                <div className={'relative self-start hidden 2xl:block'}>
+                <div className={'relative self-start hidden xl:block col-span-2 2xl:col-auto'}>
                 </div>
               </div>
-              <div className={'grid gap-x-32 grid-cols-1 2xl:grid-cols-2'}>
-                <div className={'flex justify-center items-center h-[700px]'}>
-                  <div className={'w-[400px] p-12'}>
-                    <div ref={refSection3} className={`${styles['text-text-highlight']} text-2xl uppercase font-bold mb-4`}>{t('config-title')}</div>
-                    <div>{t('config-content')}</div>
+              <div className={'grid gap-x-32 grid-cols-1 xl:grid-cols-3 2xl:grid-cols-2'}>
+                <div className={'flex xl:justify-center items-center xl:h-[700px] col-span-1 2xl:col-auto'}>
+                  <div className={'w-auto 2xl:w-[30rem] p-12'}>
+                    <div ref={refSection3} className={`${styles['text-text-highlight']} text-4xl uppercase font-bold mb-4`}>{t('config-title')}</div>
+                    <div className={`${styles['text-text-secondary']} uppercase text-2xl font-bold mb-8`}>{t('config-subtitle')}</div>
+                    <div className={'text-xl'}>{t('config-content')}</div>
                   </div>
                 </div>
-                <div className={'relative self-start hidden 2xl:block'}>
+                <div className={'relative self-start hidden xl:block col-span-2 2xl:col-auto'}>
                 </div>
               </div>
             </div>
