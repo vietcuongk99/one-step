@@ -2,7 +2,7 @@
 import styles from '@/style/styles.module.scss'
 import { useTranslation } from '@/app/i18n/client'
 import SvgAnimation from "./SvgAnimation";
-import GridAnimate from "./gridAnimate";
+import GridAnimate from "./gridAnimateV2";
 import {useRef} from "react";
 import {useIntersection} from "@/hooks/useIntersection";
 import {SERVICES, TECHS} from "@/constants/constant";
@@ -34,8 +34,9 @@ export default function ScrollAnimate({ lng }) {
     return (
       <GridAnimate
         lng={lng}
-        items={SERVICES}
-        itemShow={[
+        locale={'home'}
+        gridItems={SERVICES}
+        gridItemsShow={[
           {name: 'ecommerce', isTranslated: true, position: 1, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
           {name: 'ldap', isTranslated: true, position: 2, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
           {name: 'payment', isTranslated: true, position: 4, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
@@ -43,9 +44,11 @@ export default function ScrollAnimate({ lng }) {
           {name: 'collaborator', isTranslated: true, position: 16, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
           {name: 'chat', isTranslated: true, position: 17, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25}
         ]}
+        totalGridLayout={12}
+        gridCol={4}
         isOnScreen={start}
-        start={start}
-        isDefaultChildren={true}
+        isStartAnimate={start}
+        isDefaultChildren={false}
       />
     )
   }
@@ -53,21 +56,24 @@ export default function ScrollAnimate({ lng }) {
     return (
       <GridAnimate
         lng={lng}
-        items={TECHS.LANGUAGE}
-        itemShow={[
+        locale={'home'}
+        gridItems={TECHS.LANGUAGE}
+        gridItemsShow={[
           {name: 'JavaScript', position: 2, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
           {name: 'Java', position: 3, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Vue', position: 5, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'React', position: 8, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'NextJS', position: 10, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Nodejs', position: 11, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Spring', position: 13, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'mongoDB', position: 15, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Angular', position: 7, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'MySQL', position: 16, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Vue', position: 4, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'React', position: 5, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'NextJS', position: 6, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Nodejs', position: 7, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Spring', position: 8, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'mongoDB', position: 9, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Angular', position: 10, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'MySQL', position: 1, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
         ]}
+        totalGridLayout={12}
+        gridCol={4}
         isOnScreen={start}
-        start={start}
+        isStartAnimate={start}
         isDefaultChildren={false}
       />
     )
@@ -76,21 +82,24 @@ export default function ScrollAnimate({ lng }) {
     return (
       <GridAnimate
         lng={lng}
-        items={TECHS.OPS}
-        itemShow={[
+        locale={'home'}
+        gridItems={TECHS.OPS}
+        gridItemsShow={[
           {name: 'Docker', position: 1, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'K8S', position: 4, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Nginx', position: 5, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Longhorn', position: 11, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Kibana', position: 10, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Rancher', position: 8, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Jenkins', position: 16, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Grafana', position: 15, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Sonarqube', position: 2, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'Elasticsearch', position: 9, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'K8S', position: 2, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Nginx', position: 3, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Longhorn', position: 4, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Kibana', position: 5, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Rancher', position: 6, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Jenkins', position: 7, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Grafana', position: 8, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Sonarqube', position: 9, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'Elasticsearch', position: 10, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
         ]}
+        totalGridLayout={12}
+        gridCol={4}
         isOnScreen={start}
-        start={start}
+        isStartAnimate={start}
         isDefaultChildren={false}
       />
     )

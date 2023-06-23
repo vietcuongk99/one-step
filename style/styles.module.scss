@@ -740,6 +740,7 @@ $sz-text-secondary-light: #F2F2F2;
 
 .step-wrapper {
   display: flex;
+  padding: 1rem 0;
   .step-content {
     padding: 1rem;
   }
@@ -758,6 +759,25 @@ $sz-text-secondary-light: #F2F2F2;
     border-radius: 50%;
     background: #fff;
     box-shadow: 0 4px 25px rgba(98, 112, 129, 0.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      background: $sz-text-secondary;
+      color: #e5e7eb;
+      transform: scale(1.2);
+    }
+  }
+  .num-line-wrapper {
+    height: 70px;
+    width: calc((100% - 70px) / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .num-line {
+      width: 100%;
+      content: '';
+      border: 1px solid $sz-text-highlight;
+    }
   }
 }
 

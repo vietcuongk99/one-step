@@ -3,21 +3,25 @@ import styles from '@/style/styles.module.scss'
 import Image from "next/image";
 import SvgAnimation from "./SvgAnimation";
 import {useTranslation} from "@/app/i18n/client";
+
 export default function GridAnimate(
   { lng,
-    start = false,
+    locale = 'common',
+    isStartAnimate = false,
     isOnScreen = true,
-    items = [],
-    itemShow = [],
+    totalGridLayout = 0,
+    gridItems = [],
+    gridItemsShow = [],
+    gridRow = 0,
+    gridCol = 0,
     isDefaultChildren = true,
     childrenContent = () => <></>
   }) {
-  const { t } = useTranslation(lng, 'home')
-  const GRID_TOTAL = 18
-  const GRID_ARRAY = Array(GRID_TOTAL).fill({isShow: false})
-  const SHOW_ITEM = [...itemShow]
+  const { t } = useTranslation(lng, locale)
+  const GRID_ARRAY = Array(totalGridLayout).fill({isShow: false})
+  const SHOW_ITEM = [...gridItemsShow]
   const getItemsRender = () => {
-    const renders = items.filter((item, index) => SHOW_ITEM.map(item => item.name).indexOf(item.name) >= 0)
+    const renders = gridItems.filter((item, index) => SHOW_ITEM.map(item => item.name).indexOf(item.name) >= 0)
     for (const itemRender of renders) {
       const showItem = SHOW_ITEM.filter(item => item.name === itemRender.name)[0]
       GRID_ARRAY[showItem.position] = {
@@ -81,13 +85,13 @@ export default function GridAnimate(
                 strokeColor={'#05a'}
                 delayMilis={500}
                 triggerReplay={false}
-                start={start}
+                start={isStartAnimate}
                 childrenContent={getChildrenContent()}
               />
             </div>
           ) : (<></>)
         }
-        <div className={`grid grid-cols-6 ${isDefaultChildren ? 'gap-y-28 gap-x-12' : 'gap-y-28 gap-x-12'}`}>
+        <div className={`grid grid-cols-${gridCol} ${isDefaultChildren ? 'gap-y-28 gap-x-12' : 'gap-y-28 gap-x-12'}`}>
           {
             getItemsRender().map((item, index) => {
               return item.isShow
@@ -103,7 +107,7 @@ export default function GridAnimate(
                       strokeColor={'#05a'}
                       delayMilis={item.delayMilis}
                       triggerReplay={false}
-                      start={start}
+                      start={isStartAnimate}
                       stopTimeout={0.4}
                       isOnScreen={isOnScreen}
                       childrenContent={() => {

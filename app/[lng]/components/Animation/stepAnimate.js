@@ -70,36 +70,66 @@ export default function StepAnimate({ lng, start = false, isOnScreen = true }) {
           </div>
           <div className={`${styles['step-wrapper']} !hidden lg:!flex`}>
             <div className={`${styles['step-num']}`} style={{transform: isStepOnScreen ? 'scale(1)' : 'scale(0)', transition: 'all 0.5s ease'}}>
+              <div className={`${styles['num-line-wrapper']} opacity-0`}>
+                <div className={`${styles['num-line']}`}></div>
+              </div>
               <div className={`${styles['num-wrapper']}`}>
                 <b>1</b>
               </div>
+              <div className={`${styles['num-line-wrapper']}`}>
+                <div className={`${styles['num-line']}`}></div>
+              </div>
             </div>
           </div>
           <div className={`${styles['step-wrapper']} !hidden lg:!flex`}>
             <div className={`${styles['step-num']}`} style={{transform: isStepOnScreen ? 'scale(1)' : 'scale(0)', transition: 'all 0.5s ease'}}>
+              <div className={`${styles['num-line-wrapper']}`}>
+                <div className={`${styles['num-line']}`}></div>
+              </div>
               <div className={`${styles['num-wrapper']}`}>
                 <b>2</b>
               </div>
+              <div className={`${styles['num-line-wrapper']}`}>
+                <div className={`${styles['num-line']}`}></div>
+              </div>
             </div>
           </div>
           <div className={`${styles['step-wrapper']} !hidden lg:!flex`}>
             <div className={`${styles['step-num']}`} style={{transform: isStepOnScreen ? 'scale(1)' : 'scale(0)', transition: 'all 0.5s ease'}}>
+              <div className={`${styles['num-line-wrapper']}`}>
+                <div className={`${styles['num-line']}`}></div>
+              </div>
               <div className={`${styles['num-wrapper']}`}>
                 <b>3</b>
               </div>
-            </div>
-          </div>
-          <div className={`${styles['step-wrapper']} !hidden lg:!flex`}>
-            <div className={`${styles['step-num']}`} style={{transform: isStepOnScreen ? 'scale(1)' : 'scale(0)', transition: 'all 0.5s ease'}}>
-              <div className={`${styles['num-wrapper']}`}>
-                <b>4</b>
+              <div className={`${styles['num-line-wrapper']}`}>
+                <div className={`${styles['num-line']}`}></div>
               </div>
             </div>
           </div>
           <div className={`${styles['step-wrapper']} !hidden lg:!flex`}>
             <div className={`${styles['step-num']}`} style={{transform: isStepOnScreen ? 'scale(1)' : 'scale(0)', transition: 'all 0.5s ease'}}>
+              <div className={`${styles['num-line-wrapper']}`}>
+                <div className={`${styles['num-line']}`}></div>
+              </div>
+              <div className={`${styles['num-wrapper']}`}>
+                <b>4</b>
+              </div>
+              <div className={`${styles['num-line-wrapper']}`}>
+                <div className={`${styles['num-line']}`}></div>
+              </div>
+            </div>
+          </div>
+          <div className={`${styles['step-wrapper']} !hidden lg:!flex`}>
+            <div className={`${styles['step-num']}`} style={{transform: isStepOnScreen ? 'scale(1)' : 'scale(0)', transition: 'all 0.5s ease'}}>
+              <div className={`${styles['num-line-wrapper']}`}>
+                <div className={`${styles['num-line']}`}></div>
+              </div>
               <div className={`${styles['num-wrapper']}`}>
                 <b>5</b>
+              </div>
+              <div className={`${styles['num-line-wrapper']} opacity-0`}>
+                <div className={`${styles['num-line']}`}></div>
               </div>
             </div>
           </div>
