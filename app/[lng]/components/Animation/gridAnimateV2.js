@@ -35,7 +35,7 @@ export default function GridAnimate(
   const getChildrenContent = () => {
     const defaultChild = () => {
       return (
-        <div className={`${styles['bg-animate']} relative w-[500px] h-[255px] rounded- overflow-hidden`}>
+        <div className={`${styles['bg-animate']} relative w-[500px] h-[255px] overflow-hidden`}>
           <div className={`absolute flex ${styles['header']}`}>
             <div className={`${styles['header-logo']}`}>
               <span>Techs</span>
@@ -91,7 +91,7 @@ export default function GridAnimate(
             </div>
           ) : (<></>)
         }
-        <div className={`grid grid-cols-${gridCol} ${isDefaultChildren ? 'gap-y-28 gap-x-12' : 'gap-y-28 gap-x-12'}`}>
+        <div className={`grid grid-cols-${gridCol} ${isDefaultChildren ? 'gap-y-20 gap-x-12' : 'gap-y-20 gap-x-12'}`}>
           {
             getItemsRender().map((item, index) => {
               return item.isShow

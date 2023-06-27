@@ -39,8 +39,8 @@ export default function ScrollAnimate({ lng }) {
         gridItemsShow={[
           {name: 'ecommerce', isTranslated: true, position: 0, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
           {name: 'ldap', isTranslated: true, position: 3, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'payment', isTranslated: true, position: 4, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'ewallet', isTranslated: true, position: 7, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'payment', isTranslated: true, position: 5, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'ewallet', isTranslated: true, position: 6, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
           {name: 'collaborator', isTranslated: true, position: 8, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
           {name: 'chat', isTranslated: true, position: 11, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25}
         ]}

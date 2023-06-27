@@ -11,8 +11,9 @@ export default async function Launch({ params: { lng } }) {
   const title = () => {
     return (
       <>
-        <span className={`${styles['text-text-highlight']}`}>{t('start-title')}</span><br/>
-        <span>{t('start-title-2')}</span>
+        {/*<span className={`${styles['text-text-highlight']}`}>{t('start-title')}</span><br/>*/}
+        {/*<span>{t('start-title-2')}</span>*/}
+        <span>{t('start-title')}</span><br/>
       </>
     )
   }
