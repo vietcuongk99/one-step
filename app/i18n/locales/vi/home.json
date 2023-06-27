@@ -86,14 +86,14 @@
   },
   "step-animate": {
     "discover-title": "Lên kế hoạch",
-    "discover-content": "Chúng ta cùng nhau xác định tầm nhìn sản phẩm của bạn dựa trên nhu cầu (khách hàng) của bạn và tầm nhìn về tương lai doanh nghiệp của bạn.",
+    "discover-content": "Chúng tôi xác định tầm nhìn sản phẩm của bạn dựa trên nhu cầu (khách hàng) của bạn và tầm nhìn về tương lai doanh nghiệp của bạn.",
     "document-title": "Tài liệu hóa",
     "document-content": "Chúng tôi tạo ra một hồ sơ tồn đọng rõ ràng để ghi lại các mục tiêu ngắn hạn và dài hạn. Chúng tôi xác định nhu cầu, chuyển chúng thành yêu cầu và thiết kế giải pháp của bạn.",
     "develop-title": "Lập trình",
     "develop-content": "Chúng tôi phát triển giải pháp cần thiết bằng các phương pháp linh hoạt.",
     "deploy-title": "Triển khai",
-    "deploy-content": "Chúng tôi sẽ triển khai (các) giải pháp của bạn theo các quy trình phát triển tự động và CI/CD dựa trên nhu cầu của bạn.",
+    "deploy-content": "Chúng tôi sẽ triển khai các giải pháp của bạn theo các quy trình phát triển tự động và CI/CD dựa trên mong muốn của bạn.",
     "driver-title": "Bảo trì",
-    "driver-content": "Chúng tôi cung cấp giải pháp của bạn cho người dùng và nếu cần, chúng tôi sẽ duy trì và phát triển các giải pháp của bạn hướng tới tương lai."
+    "driver-content": "Chúng tôi đưa giải pháp của bạn đến với người dùng và nếu cần, chúng tôi sẽ duy trì và phát triển nó để hướng tới tương lai."
   }
 }

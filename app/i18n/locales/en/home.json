@@ -92,7 +92,7 @@
     "develop-title": "Develop",
     "develop-content": "We develop the needed solution using agile methodologies.",
     "deploy-title": "Deploy",
-    "deploy-content": "We will deploy your solution(s) following automated development pipelines and CI/CD based on your demands.",
+    "deploy-content": "We will deploy your solution following automated development pipelines and CI/CD based on your demands.",
     "driver-title": "Driver",
     "driver-content": "We deliver your solution to the user and, if needed, we maintain and develop your solutions towards the future."
   }

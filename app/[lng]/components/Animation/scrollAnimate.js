@@ -37,12 +37,12 @@ export default function ScrollAnimate({ lng }) {
         locale={'home'}
         gridItems={SERVICES}
         gridItemsShow={[
-          {name: 'ecommerce', isTranslated: true, position: 1, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'ldap', isTranslated: true, position: 2, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'ecommerce', isTranslated: true, position: 0, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'ldap', isTranslated: true, position: 3, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
           {name: 'payment', isTranslated: true, position: 4, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'ewallet', isTranslated: true, position: 14, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'collaborator', isTranslated: true, position: 16, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
-          {name: 'chat', isTranslated: true, position: 17, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25}
+          {name: 'ewallet', isTranslated: true, position: 7, delayMilis: 500, scaleFrom: 0.75, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'collaborator', isTranslated: true, position: 8, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25},
+          {name: 'chat', isTranslated: true, position: 11, delayMilis: 500, scaleFrom: 1, timeOutPath: 20, scaleTo: 1.25}
         ]}
         totalGridLayout={12}
         gridCol={4}
@@ -111,7 +111,7 @@ export default function ScrollAnimate({ lng }) {
         <div style={{position: 'relative'}}>
           <div>
             <div id={'row1'}>
-              <div className={'grid gap-x-32 grid-cols-1 xl:grid-cols-3 2xl:grid-cols-2'}>
+              <div className={'grid grid-cols-1 xl:grid-cols-3 2xl:grid-cols-2'}>
                 <div className={'flex xl:justify-center items-center xl:h-[700px] col-span-1 2xl:col-auto'}>
                   <div className={'w-auto 2xl:w-[30rem] p-12'}>
                     <div ref={refSection1} className={`${styles['text-text-highlight']} text-4xl uppercase font-bold mb-4`}>{t('business-title')}</div>
@@ -120,24 +120,24 @@ export default function ScrollAnimate({ lng }) {
                   </div>
                 </div>
                 <div className={'relative self-start hidden xl:block col-span-2 2xl:col-auto'}>
-                  <div style={{position: 'absolute', top: 0, left: 0, zIndex: showAnimation(isOnScreen1) ? 1 : 0}} className={'h-[2000px]'}>
+                  <div style={{zIndex: showAnimation(isOnScreen1) ? 1 : 0}} className={'h-[2000px] absolute top-0 right-0'}>
                     <div style={{position: 'sticky', top: `calc(50% - 200px)`, transition: 'opacity 0.5s ease'}} className={`${showAnimation(isOnScreen1) ? 'opacity-100' : 'opacity-0'}`}>
                       {renderAnimationSection1(showAnimation(isOnScreen1))}
                     </div>
                   </div>
-                  <div style={{position: 'absolute', top: 0, left: 0, zIndex: showAnimation(isOnScreen2) ? 1 : 0}} className={'h-[2000px]'}>
+                  <div style={{zIndex: showAnimation(isOnScreen2) ? 1 : 0}} className={'h-[2000px] absolute top-0 right-0'}>
                     <div style={{position: 'sticky', top: `calc(50% - 200px)`, transition: 'opacity 0.5s ease'}} className={`${showAnimation(isOnScreen2) ? 'opacity-100' : 'opacity-0'}`}>
                       {renderAnimationSection2(showAnimation(isOnScreen2))}
                     </div>
                   </div>
-                  <div style={{position: 'absolute', top: 0, left: 0, zIndex: showAnimation(isOnScreen3) ? 1 : 0}} className={'h-[2000px]'}>
+                  <div style={{zIndex: showAnimation(isOnScreen3) ? 1 : 0}} className={'h-[2000px] absolute top-0 right-0'}>
                     <div style={{position: 'sticky', top: `calc(50% - 200px)`, transition: 'opacity 0.5s ease'}} className={`${showAnimation(isOnScreen3) ? 'opacity-100' : 'opacity-0'}`}>
                       {renderAnimationSection3(showAnimation(isOnScreen3))}
                     </div>
                   </div>
                 </div>
               </div>
-              <div className={'grid gap-x-32 grid-cols-1 xl:grid-cols-3 2xl:grid-cols-2'}>
+              <div className={'grid grid-cols-1 xl:grid-cols-3 2xl:grid-cols-2'}>
                 <div className={'flex xl:justify-center items-center xl:h-[700px] col-span-1 2xl:col-auto'}>
                   <div className={'w-auto 2xl:w-[30rem] p-12'}>
                     <div ref={refSection2} className={`${styles['text-text-highlight']} text-4xl uppercase font-bold mb-4`}>{t('language-title')}</div>
@@ -148,7 +148,7 @@ export default function ScrollAnimate({ lng }) {
                 <div className={'relative self-start hidden xl:block col-span-2 2xl:col-auto'}>
                 </div>
               </div>
-              <div className={'grid gap-x-32 grid-cols-1 xl:grid-cols-3 2xl:grid-cols-2'}>
+              <div className={'grid grid-cols-1 xl:grid-cols-3 2xl:grid-cols-2'}>
                 <div className={'flex xl:justify-center items-center xl:h-[700px] col-span-1 2xl:col-auto'}>
                   <div className={'w-auto 2xl:w-[30rem] p-12'}>
                     <div ref={refSection3} className={`${styles['text-text-highlight']} text-4xl uppercase font-bold mb-4`}>{t('config-title')}</div>
