@@ -9,20 +9,20 @@
   "our-values-subtitle": "We start the search, the execution and the transformation, anything that allows us together accomplish greater and meaningful things in life. We do not accept things just the way they are. We are engineers who want to write great code.",
   "values": {
     "people": {
-      "title": "People",
-      "content": "Give a damn about our employees. They are real people who we have let into our little Ars Futura world. They have emotions, problems, parents, kids, hobbies. If they need a hand, it is our duty to help them out. Give a damn about the work. We’re building something with our own two hands. This is our legacy. Put the work in so that we can be proud of it."
+      "title": "Open and direct",
+      "content": "We are transparent and open. We communicate clearly and directly. This is how we work, because we see this as the key to a successful collaboration."
     },
     "feeling": {
-      "title": "Feeling",
-      "content": "We love it when our teams are passionate about work. No one is happier to see them work diligently. But! We don’t want them to work themselves to exhaustion. Aim for bigger and better things, to find (and keep) the balance in your life. Take some time off, ask for an extension on your deadline, enjoy your long break this Thursday. Your work will be there tomorrow."
+      "title": "Skilled",
+      "content": "Our highly skilled IT professionals are specialised in Java, React, Angular, Vue.js. Clean code, simplicity, code reviews and test automation will guarantee long term stability and maintainability of your solutions."
     },
     "detail": {
-      "title": "Detail",
-      "content": "Big picture work is important, it’s what we built this business on. But, we like the tiny details, ones that show we put a lot of care into something. It’s the little things that few people will notice – the code we rewrote even though we didn’t need to, the designs we scrapped along the way, the quality wood you use for the back of the cabinet that nobody sees."
+      "title": "Solution-driven",
+      "content": "We combine our technical skills with business affinity and a critical mindset to deliver the best possible solution for your business. For us adding value to your business is the ultimate goal."
     },
     "happy": {
-      "title": "Happy",
-      "content": "The Internet is a huge, wonderful place filled with all sorts of things. And some of those things simply spark joy. We want to be the ones responsible for putting a bit of that joy into the world. If it also turns out we had fun along the way, so be it! In 20 years’ time, when people think back on their time spent with Ars Futura, we’d like them to feel like they had some good times."
+      "title": "Trustworthy",
+      "content": "We are always there to help clients with advice and actions. We take ownership, responsibility, and joy in delivering the best possible solutions."
     }
   },
   "web-dev": "Web development",
