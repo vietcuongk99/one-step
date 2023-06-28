@@ -1,14 +1,13 @@
 "use client"
+import React from "react";
 import {ConfigProvider, Form, Modal} from "antd";
 import styles from "@/style/styles.module.scss";
 import Image from "next/image";
 import {memo, useCallback, useEffect, useState} from "react";
 import {BUDGET_LIST} from "@/constants/constant";
 import { useTranslation } from '@/app/i18n/client'
-export default function LaunchFormDetail({lng, currentStep, showResultForSubmit}) {
+function LaunchFormDetail({lng, submitForm, isDisabledSubmit}) {
   const { t } = useTranslation(lng, 'launch')
-  const [isDisabledSubmit, setIsDisabledSubmit] = useState(false)
-  const steps = BUDGET_LIST.slice(0).reverse()
   const customThemeForForm = {
     token: {
       fontSize: '100%',
@@ -17,35 +16,11 @@ export default function LaunchFormDetail({lng, currentStep, showResultForSubmit}
     }
   }
   const onFinish = async (values) => {
-    await submitForm(values)
+    await handleSubmitForm(values)
   };
   const onFinishFailed = (errorInfo) => {};
-  const submitForm = async (values) => {
-    setIsDisabledSubmit(true)
-    const {email, project, name, description} = {...values}
-    const price = steps.filter(item => item.step === currentStep)[0].value
-    const res = await fetch("https://server.softzone.vn/order-project", {
-      headers: {
-        "Accept": "application/json",
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        email, name, project, description, price
-      }),
-      method: "POST"
-    })
-    if (!res || !res.ok) {
-      setIsDisabledSubmit(false)
-      showResultForSubmit(false)
-      return
-    }
-    const response = await res.json()
-    if (response) {
-      setTimeout(() => {
-        setIsDisabledSubmit(false)
-        showResultForSubmit(response.success)
-      }, 1000)
-    }
+  const handleSubmitForm = async (values) => {
+    await submitForm(values)
   }
   const FormContent = () => {
     return (
@@ -189,3 +164,4 @@ export default function LaunchFormDetail({lng, currentStep, showResultForSubmit}
     <FormContent />
   )
 }
+export default React.memo(LaunchFormDetail)

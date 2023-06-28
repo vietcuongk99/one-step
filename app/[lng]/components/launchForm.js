@@ -12,6 +12,7 @@ export default function LaunchForm({lng}) {
   const [currentStep, setCurrentStep] = useState(0);
   const [isSuccessSubmit, setIsSuccessSubmit] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isDisabledSubmit, setIsDisabledSubmit] = useState(false)
   const customThemeForModal = {
     token: {
       fontSize: '100%',
@@ -22,9 +23,9 @@ export default function LaunchForm({lng}) {
   useEffect(() => {
     // console.log(currentStep)
   }, [currentStep])
-  const setPopover = useCallback((step) => {
+  const setPopover = (step) => {
     setCurrentStep(step)
-  }, [currentStep])
+  }
   const showModal = () => {
     setIsModalOpen(true);
   };
@@ -35,6 +36,33 @@ export default function LaunchForm({lng}) {
     setIsSuccessSubmit(isSuccess)
     showModal()
   };
+  const submitForm = useCallback(async (values) => {
+    setIsDisabledSubmit(true)
+    const {email, project, name, description} = {...values}
+    const price = BUDGET_LIST.slice(0).reverse().filter(item => item.step === currentStep)[0].value
+    const res = await fetch("https://server.softzone.vn/order-project", {
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        email, name, project, description, price
+      }),
+      method: "POST"
+    })
+    if (!res || !res.ok) {
+      setIsDisabledSubmit(false)
+      showResultForSubmit(false)
+      return
+    }
+    const response = await res.json()
+    if (response) {
+      setTimeout(() => {
+        setIsDisabledSubmit(false)
+        showResultForSubmit(response.success)
+      }, 1000)
+    }
+  }, [])
   const ModalSubmitResult = () => {
     return (
       <ConfigProvider theme={customThemeForModal}>
@@ -73,7 +101,7 @@ export default function LaunchForm({lng}) {
         <div className={'col-span-1 order-2 xl:order-1 flex flex-col gap-y-9 w-full mx-auto max-w-md 2xl:max-w-[500px]'}>
           <p className="font-semibold mb-14">{t('your-budget')}</p>
           <LaunchBudget lng={lng} currentStep={currentStep} setPopover={setPopover} />
-          <LaunchFormDetail lng={lng} currentStep={currentStep} showResultForSubmit={showResultForSubmit} />
+          <LaunchFormDetail lng={lng} submitForm={submitForm} isDisabledSubmit={isDisabledSubmit} />
         </div>
       </div>
       <ModalSubmitResult />
